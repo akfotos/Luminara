@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship — Luminara</title>
+  <meta name="description" content="Iron sharpens iron. Connect with a faith-driven creative mentor or become one. Luminara's mentorship programme pairs purpose-driven artists, designers, writers and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="ms-hero">
+    <div class="ms-hero__bg">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=85&fit=crop" alt="Faith-driven creatives together" class="ms-hero__bg-img">
+      <div class="ms-hero__overlay"></div>
+    </div>
+    <div class="ms-hero__content container fade-in">
+      <span class="label ms-hero__label">Mentorship Programme</span>
+      <h1 class="ms-hero__title">
+        As iron sharpens iron,<br>so one person sharpens another.
+      </h1>
+      <p class="ms-hero__verse">Proverbs 27:17</p>
+      <p class="ms-hero__sub">Luminara pairs faith-driven creatives with experienced mentors who walk alongside them — spiritually, professionally, and creatively.</p>
+      <div class="ms-hero__buttons">
+        <a href="#apply" class="btn btn-primary">
+          Apply for a Mentor
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#become" class="btn btn-outline ms-hero__btn-outline">Become a Mentor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PILLARS ========== -->
+  <section class="ms-pillars" id="pillars">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">What We Focus On</span>
+        <h2>Four Pillars of Mentorship</h2>
+        <p>Every mentorship relationship at Luminara is rooted in these four areas of growth.</p>
+      </div>
+      <div class="ms-pillars__grid">
+
+        <div class="ms-pillar fade-in">
+          <div class="ms-pillar__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4C24 4 8 14 8 28a16 16 0 0032 0C40 14 24 4 24 4z"/>
+              <path d="M24 22v12M18 28l6-6 6 6"/>
+            </svg>
+          </div>
+          <h3>Spiritual Growth</h3>
+          <p>Grounded in scripture and prayer, mentors walk alongside mentees in developing a deeper, more resilient faith that fuels their creative calling.</p>
+        </div>
+
+        <div class="ms-pillar fade-in">
+          <div class="ms-pillar__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="6" width="36" height="36" rx="4"/>
+              <path d="M16 24h16M16 32h10M16 16h16"/>
+              <circle cx="36" cy="12" r="6" fill="var(--sage-light)" stroke="var(--forest)" stroke-width="1.5"/>
+              <path d="M34 12l1.5 1.5L38 10"/>
+            </svg>
+          </div>
+          <h3>Professional Integrity</h3>
+          <p>Learn to navigate the creative industry with excellence, ethical practice, and a purpose-driven approach that honours God in every project.</p>
+        </div>
+
+        <div class="ms-pillar fade-in">
+          <div class="ms-pillar__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="16" r="8"/>
+              <path d="M8 42c0-8.84 7.16-16 16-16s16 7.16 16 16"/>
+              <path d="M36 26l4 4-4 4M12 26l-4 4 4 4"/>
+            </svg>
+          </div>
+          <h3>Creative Development</h3>
+          <p>Sharpen your craft through regular creative feedback, portfolio reviews, and skill-building sessions guided by seasoned artists in your discipline.</p>
+        </div>
+
+        <div class="ms-pillar fade-in">
+          <div class="ms-pillar__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="16" cy="20" r="8"/>
+              <circle cx="32" cy="20" r="8"/>
+              <path d="M4 40c0-6.63 5.37-12 12-12"/>
+              <path d="M32 28c6.63 0 12 5.37 12 12"/>
+              <path d="M20 32h8"/>
+            </svg>
+          </div>
+          <h3>Community & Discipleship</h3>
+          <p>Beyond the 1-on-1 relationship, mentees are invited into a broader network of peer support, group sessions, and community accountability.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BANNER IMAGE ========== -->
+  <div class="ms-banner">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=85&fit=crop" alt="Creative community mentorship session" class="ms-banner__img">
+    <div class="ms-banner__overlay">
+      <blockquote class="ms-banner__quote">
+        "Two are better than one, because they have a good return for their labour."
+        <cite>— Ecclesiastes 4:9</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="ms-how" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">The Process</span>
+        <h2>How It Works</h2>
+        <p>A clear, structured journey from application to transformation — in five steps.</p>
+      </div>
+      <div class="ms-steps">
+
+        <div class="ms-step fade-in">
+          <div class="ms-step__number">01</div>
+          <div class="ms-step__body">
+            <h3>Apply & Share Your Heart</h3>
+            <p>Complete our intake form. Tell us about your faith walk, your creative discipline, your goals, and your availability. This helps us find the right match.</p>
+          </div>
+        </div>
+
+        <div class="ms-step fade-in">
+          <div class="ms-step__number">02</div>
+          <div class="ms-step__body">
+            <h3>Get Matched</h3>
+            <p>Our team prayerfully reviews every application and pairs mentees with a mentor who shares their discipline, life stage, and growth focus.</p>
+          </div>
+        </div>
+
+        <div class="ms-step fade-in">
+          <div class="ms-step__number">03</div>
+          <div class="ms-step__body">
+            <h3>Introduction Call</h3>
+            <p>Before the formal relationship begins, you'll have a 30-minute introductory call to ensure alignment, discuss expectations, and begin in prayer.</p>
+          </div>
+        </div>
+
+        <div class="ms-step fade-in">
+          <div class="ms-step__number">04</div>
+          <div class="ms-step__body">
+            <h3>Regular Sessions</h3>
+            <p>Meet bi-weekly via Zoom or in person (where available). Sessions cover creative feedback, scripture study, prayer, and accountability goals.</p>
+          </div>
+        </div>
+
+        <div class="ms-step fade-in">
+          <div class="ms-step__number">05</div>
+          <div class="ms-step__body">
+            <h3>Grow & Give Back</h3>
+            <p>At the end of a 6-month cycle, mentees are invited to consider becoming mentors themselves — passing the gift of sharpening forward.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMMITMENT ========== -->
+  <section class="ms-commitment">
+    <div class="container">
+      <div class="ms-commitment__grid">
+        <div class="ms-commitment__col fade-in">
+          <h2>What We Ask of Mentees</h2>
+          <ul class="ms-commitment__list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Show up consistently — attend bi-weekly sessions and come prepared
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Be honest and open about your struggles, creative blocks, and spiritual dry seasons
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Honour confidentiality — what is shared in the relationship stays there
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Complete the full 6-month commitment before requesting a rematch
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Engage in prayer and scripture between sessions
+            </li>
+          </ul>
+        </div>
+        <div class="ms-commitment__col fade-in">
+          <h2>What We Ask of Mentors</h2>
+          <ul class="ms-commitment__list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Dedicate at least 1 hour bi-weekly to your mentee
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Lead with humility — share your failures as freely as your successes
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Pray for your mentee regularly, not just during sessions
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Maintain strict confidentiality about all personal disclosures
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Attend quarterly mentor check-ins with the Luminara team
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENTORS ========== -->
+  <section class="ms-mentors" id="mentors">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">Meet the Team</span>
+        <h2>Our Mentors</h2>
+        <p>Experienced, faith-rooted creatives who are passionate about pouring into the next generation.</p>
+      </div>
+      <div class="ms-mentors__grid">
+
+        <div class="ms-mentor-card fade-in">
+          <div class="ms-mentor-card__img">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&q=85&fit=crop&crop=faces" alt="Naomi Asare">
+          </div>
+          <div class="ms-mentor-card__body">
+            <h3>Naomi Asare</h3>
+            <span class="ms-mentor-card__role">Photography · Visual Storytelling</span>
+            <p>"I mentor through the lens of Psalm 19 — that creation declares God's glory. I help photographers find the sacred in every frame."</p>
+            <div class="ms-mentor-card__tags">
+              <span>Documentary</span>
+              <span>Portraits</span>
+              <span>Editorial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-mentor-card fade-in">
+          <div class="ms-mentor-card__img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&q=85&fit=crop&crop=faces" alt="David Mensah">
+          </div>
+          <div class="ms-mentor-card__body">
+            <h3>David Mensah</h3>
+            <span class="ms-mentor-card__role">Brand Design · Graphic Arts</span>
+            <p>"Every brand tells a story. I help designers build visual identities that reflect integrity, purpose, and the beauty of their faith."</p>
+            <div class="ms-mentor-card__tags">
+              <span>Branding</span>
+              <span>UI/UX</span>
+              <span>Typography</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-mentor-card fade-in">
+          <div class="ms-mentor-card__img">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&q=85&fit=crop&crop=faces" alt="Ruth Osei">
+          </div>
+          <div class="ms-mentor-card__body">
+            <h3>Ruth Osei</h3>
+            <span class="ms-mentor-card__role">Writing · Devotional Content</span>
+            <p>"Words shaped by faith have the power to transform. I mentor writers in finding their voice and using it for God's glory."</p>
+            <div class="ms-mentor-card__tags">
+              <span>Devotionals</span>
+              <span>Poetry</span>
+              <span>Copywriting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ms-mentor-card fade-in">
+          <div class="ms-mentor-card__img">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&q=85&fit=crop&crop=faces,top" alt="Emmanuel Boateng">
+          </div>
+          <div class="ms-mentor-card__body">
+            <h3>Emmanuel Boateng</h3>
+            <span class="ms-mentor-card__role">Film & Worship Media</span>
+            <p>"Film is a pulpit. I help filmmakers craft stories that move people toward truth, beauty, and the presence of God."</p>
+            <div class="ms-mentor-card__tags">
+              <span>Short Film</span>
+              <span>Worship Media</span>
+              <span>Directing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials ms-testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">Changed Lives</span>
+        <h2>What Mentees Say</h2>
+        <p>Stories of growth, transformation, and sharpened purpose from within our community.</p>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"Before Luminara's mentorship, I was creating in isolation. Naomi helped me see that my photography is an act of worship. That realisation changed everything."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&q=85&fit=crop&crop=faces" alt="Amara Johnson"></div>
+            <div>
+              <div class="testimonial-card__name">Amara Johnson</div>
+              <div class="testimonial-card__role">Portrait Photographer · Accra</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"David didn't just teach me design — he taught me to build with integrity. Our sessions always started with prayer, and I felt that in every project I delivered."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=85&fit=crop&crop=faces" alt="Daniel Lee"></div>
+            <div>
+              <div class="testimonial-card__name">Daniel Lee</div>
+              <div class="testimonial-card__role">Brand Designer · London</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"Ruth helped me find my written voice. More than that, she helped me understand that my story — and my faith — were worth putting on the page."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&q=85&fit=crop&crop=faces" alt="Grace Williams"></div>
+            <div>
+              <div class="testimonial-card__name">Grace Williams</div>
+              <div class="testimonial-card__role">Worship Songwriter · Lagos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPLY ========== -->
+  <section class="ms-apply" id="apply">
+    <div class="container">
+      <div class="ms-apply__grid">
+
+        <!-- Apply as Mentee -->
+        <div class="ms-apply__panel fade-in">
+          <span class="label">Find a Mentor</span>
+          <h2>Apply for Mentorship</h2>
+          <p>Ready to be sharpened? Fill in the form below and our team will be in touch within 5 business days to discuss your match.</p>
+          <form class="contact-form ms-apply__form" onsubmit="return false;">
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label>First Name</label>
+                <input type="text" placeholder="Your first name">
+              </div>
+              <div class="contact-form__field">
+                <label>Last Name</label>
+                <input type="text" placeholder="Your last name">
+              </div>
+            </div>
+            <div class="contact-form__field">
+              <label>Email Address</label>
+              <input type="email" placeholder="hello@example.com">
+            </div>
+            <div class="contact-form__field">
+              <label>Creative Discipline</label>
+              <select>
+                <option value="">Select your primary discipline</option>
+                <option>Photography</option>
+                <option>Design</option>
+                <option>Writing</option>
+                <option>Music & Worship</option>
+                <option>Film & Video</option>
+                <option>Fine Art</option>
+                <option>Podcasting</option>
+                <option>Crafts & Handmade</option>
+              </select>
+            </div>
+            <div class="contact-form__field">
+              <label>Availability</label>
+              <select>
+                <option value="">When are you available to meet?</option>
+                <option>Weekday mornings</option>
+                <option>Weekday evenings</option>
+                <option>Weekends</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+            <div class="contact-form__field">
+              <label>Where are you in your faith walk?</label>
+              <textarea rows="3" placeholder="Share briefly — we want to match you well..."></textarea>
+            </div>
+            <div class="contact-form__field">
+              <label>What do you hope to gain from mentorship?</label>
+              <textarea rows="3" placeholder="Creative goals, spiritual growth, career guidance..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit Application
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Become a Mentor -->
+        <div class="ms-apply__panel ms-apply__panel--dark fade-in" id="become">
+          <span class="label ms-apply__label-light">Give Back</span>
+          <h2>Become a Mentor</h2>
+          <p>If God has placed experience, wisdom, and passion in you — it's time to pour it out. Join our team of mentors and help shape the next generation of faith-driven creatives.</p>
+          <ul class="ms-become__list">
+            <li>
+              <div class="ms-become__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div>
+                <strong>Minimum 3 years</strong> of professional experience in your discipline
+              </div>
+            </li>
+            <li>
+              <div class="ms-become__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                An <strong>active faith</strong> and willingness to integrate scripture into mentorship
+              </div>
+            </li>
+            <li>
+              <div class="ms-become__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                Availability to commit <strong>1 hour bi-weekly</strong> for 6 months
+              </div>
+            </li>
+            <li>
+              <div class="ms-become__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                Completion of a <strong>short onboarding</strong> and mentor orientation session
+              </div>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline ms-become__btn">
+            Express Your Interest
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Ready to Begin?</span>
+        <h2>Your Creative Journey Starts Here</h2>
+        <p>Join a growing community of faith-driven creatives and share your God-given gifts with the world.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join Luminara Today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="explore.html" class="btn btn-outline">Explore Categories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

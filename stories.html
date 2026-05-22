@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories — Luminara</title>
+  <meta name="description" content="Hear from the faith-driven creatives who call Luminara home.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link nav__link--active">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Community Stories</span>
+      <h1>Voices from Luminara</h1>
+      <p>Hear from the creatives who call Luminara home.</p>
+    </div>
+  </section>
+
+  <!-- ========== STORY BANNER ========== -->
+  <section class="story-banner">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=85&fit=crop" alt="Creative community gathering" class="story-banner__img">
+    <div class="story-banner__overlay">
+      <span class="label">From the Community</span>
+      <h2>Creatives sharing faith, craft &amp; purpose</h2>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials__grid">
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"Luminara gave me the courage to share my work with a community that truly understands what it means to create from a place of faith."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&q=85&fit=crop&crop=faces" alt="Amara Johnson"></div>
+            <div>
+              <div class="testimonial-card__name">Amara Johnson</div>
+              <div class="testimonial-card__role">Portrait Photographer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"The mentorship I found here transformed my approach to design. It's more than a portfolio — it's a family of purpose-driven creatives."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=85&fit=crop&crop=faces" alt="Daniel Lee"></div>
+            <div>
+              <div class="testimonial-card__name">Daniel Lee</div>
+              <div class="testimonial-card__role">Brand Designer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"I've been part of many creative communities, but Luminara is the only one where I feel both seen and safe. It's the space I've been praying for."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&q=85&fit=crop&crop=faces" alt="Grace Williams"></div>
+            <div>
+              <div class="testimonial-card__name">Grace Williams</div>
+              <div class="testimonial-card__role">Worship Leader & Songwriter</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Ready to Begin?</span>
+        <h2>Your Creative Journey Starts Here</h2>
+        <p>Join a growing community of faith-driven creatives and share your God-given gifts with the world.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join Luminara Today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="explore.html" class="btn btn-outline">Explore Categories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

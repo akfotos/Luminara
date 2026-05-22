@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center — Luminara</title>
+  <meta name="description" content="Find answers to common questions about Luminara.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Support</span>
+      <h1>Help Center</h1>
+      <p>Find answers to the most common questions about Luminara.</p>
+    </div>
+  </section>
+
+  <!-- ========== HELP CONTENT ========== -->
+  <section class="support-page">
+    <div class="container">
+      <div class="support-layout">
+
+        <!-- FAQ Categories -->
+        <div class="faq-section fade-in">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-group">
+            <h3 class="faq-group__title">Getting Started</h3>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                How do I create a Luminara account?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Click "Join Now" in the top navigation. Fill in your name, email, and creative discipline. You'll receive a confirmation email within a few minutes.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                Is Luminara free to join?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Yes — a basic Luminara membership is completely free. We also offer a Pro tier with advanced portfolio tools, analytics, and priority placement for featured works.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                What creative disciplines does Luminara support?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Luminara supports Photography, Design, Writing, Music & Worship, Film & Video, Fine Art, Podcasting, and Crafts & Handmade — with more categories coming.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <h3 class="faq-group__title">Your Profile & Work</h3>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                How do I upload and showcase my work?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Once logged in, navigate to your profile dashboard and click "Add Work." You can upload images, videos, audio files, and written pieces. All submissions go through a brief review before being published.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                How are works selected for Featured?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Our editorial team curates Featured Works monthly based on quality, originality, and alignment with our community values. Being active and engaged in the community increases your visibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <h3 class="faq-group__title">Community & Safety</h3>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                How does Luminara moderate content?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>All content is reviewed before publication. We use a combination of automated screening and human review to ensure everything aligns with our community guidelines rooted in respect, grace, and encouragement.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item__question" onclick="this.parentElement.classList.toggle('open')">
+                How do I report inappropriate content or a user?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="faq-item__answer">
+                <p>Each piece of work and each profile has a "Report" button. Alternatively, email us directly at <a href="mailto:safety@luminara.com">safety@luminara.com</a> and our team will respond within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-cta">
+            <p>Didn't find what you were looking for?</p>
+            <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
+          </div>
+        </div>
+
+        <!-- Quick Links Sidebar -->
+        <aside class="support-sidebar fade-in">
+          <div class="profile-card">
+            <h3 class="profile-card__title">Quick Links</h3>
+            <ul class="support-links">
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+              <li><a href="promise.html">Our Promise</a></li>
+              <li><a href="join.html">Join Luminara</a></li>
+            </ul>
+          </div>
+          <div class="profile-card">
+            <h3 class="profile-card__title">Still Need Help?</h3>
+            <p style="font-size:0.875rem; color: var(--medium-gray); margin-bottom:16px;">Our support team is available Monday–Friday, 9am–6pm GMT.</p>
+            <a href="contact.html" class="btn btn-outline" style="width:100%; justify-content:center;">Send a Message</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

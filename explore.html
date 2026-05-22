@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore — Luminara</title>
+  <meta name="description" content="Browse faith-driven creative communities organized by discipline and passion.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Browse by Craft</span>
+      <h1>Find Your Creative Space</h1>
+      <p>Discover communities of faith-driven creatives organized by discipline and passion.</p>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories__grid">
+        <!-- Photography -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="10" width="40" height="28" rx="3"/>
+              <circle cx="24" cy="24" r="8"/>
+              <circle cx="24" cy="24" r="4"/>
+              <path d="M14 10V7h6v3"/>
+            </svg>
+          </div>
+          <h3>Photography</h3>
+          <p>Portraits, landscapes, and visual storytelling rooted in faith.</p>
+          <span class="category-card__count">240+ Creators</span>
+        </div>
+
+        <!-- Design -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+              <path d="M4 14l20 10 20-10"/>
+              <path d="M24 44V24"/>
+            </svg>
+          </div>
+          <h3>Design</h3>
+          <p>Brand identity, UI/UX, and graphic design with purpose.</p>
+          <span class="category-card__count">180+ Creators</span>
+        </div>
+
+        <!-- Writing -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 6h32v36H8z"/>
+              <path d="M14 14h20M14 22h20M14 30h12"/>
+              <path d="M32 36l8-8-4-4-8 8v4h4z"/>
+            </svg>
+          </div>
+          <h3>Writing</h3>
+          <p>Devotionals, poetry, content creation, and storytelling.</p>
+          <span class="category-card__count">150+ Creators</span>
+        </div>
+
+        <!-- Music & Worship -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 38V12l22-6v26"/>
+              <circle cx="12" cy="38" r="4"/>
+              <circle cx="34" cy="32" r="4"/>
+              <path d="M16 20l22-6"/>
+            </svg>
+          </div>
+          <h3>Music & Worship</h3>
+          <p>Original compositions, worship leading, and audio production.</p>
+          <span class="category-card__count">120+ Creators</span>
+        </div>
+
+        <!-- Film & Video -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="10" width="36" height="28" rx="3"/>
+              <polygon points="20,18 20,30 32,24"/>
+              <path d="M6 16h36M6 32h36"/>
+            </svg>
+          </div>
+          <h3>Film & Video</h3>
+          <p>Documentaries, short films, and visual narratives of faith.</p>
+          <span class="category-card__count">90+ Creators</span>
+        </div>
+
+        <!-- Fine Art -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 40L24 8l16 32H8z"/>
+              <circle cx="36" cy="14" r="4"/>
+              <path d="M16 28h16"/>
+            </svg>
+          </div>
+          <h3>Fine Art</h3>
+          <p>Painting, illustration, sculpture, and mixed media works.</p>
+          <span class="category-card__count">110+ Creators</span>
+        </div>
+
+        <!-- Podcasting -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="16" y="6" width="16" height="24" rx="8"/>
+              <path d="M10 24a14 14 0 0028 0"/>
+              <path d="M24 36v8M18 44h12"/>
+            </svg>
+          </div>
+          <h3>Podcasting</h3>
+          <p>Faith conversations, interviews, and audio storytelling.</p>
+          <span class="category-card__count">75+ Creators</span>
+        </div>
+
+        <!-- Crafts & Handmade -->
+        <div class="category-card fade-in" style="background-image: url('https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=600&q=80&fit=crop'); background-size: cover; background-position: center;">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4c-6 8-16 14-16 24a16 16 0 0032 0C40 18 30 12 24 4z"/>
+              <path d="M24 28v12"/>
+              <path d="M18 34l6-6 6 6"/>
+            </svg>
+          </div>
+          <h3>Crafts & Handmade</h3>
+          <p>Handcrafted goods, calligraphy, and artisanal creations.</p>
+          <span class="category-card__count">95+ Creators</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Ready to Begin?</span>
+        <h2>Your Creative Journey Starts Here</h2>
+        <p>Join a growing community of faith-driven creatives and share your God-given gifts with the world.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join Luminara Today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="featured.html" class="btn btn-outline">View Featured Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

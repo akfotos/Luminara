@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Luminara</title>
+  <meta name="description" content="Discover upcoming exhibitions, virtual studio tours, and behind-the-scenes creative events from faith-driven artists in the Luminara community.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="ev-hero">
+    <div class="ev-hero__slides" id="evSlides" aria-hidden="true">
+      <div class="ev-hero__slide ev-hero__slide--active" style="background-image:url('https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=1600&q=85&fit=crop')"></div>
+      <div class="ev-hero__slide" style="background-image:url('https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1600&q=85&fit=crop')"></div>
+      <div class="ev-hero__slide" style="background-image:url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600&q=85&fit=crop')"></div>
+    </div>
+    <div class="ev-hero__overlay"></div>
+
+    <div class="container ev-hero__inner fade-in">
+      <span class="label ev-hero__label">Exhibitions & Events</span>
+      <h1 class="ev-hero__title">Step Inside the<br>Creative Process</h1>
+      <p class="ev-hero__sub">Discover upcoming exhibitions, virtual studio tours, and behind-the-scenes stories from faith-driven artists.</p>
+
+      <!-- Quick Filter Bar -->
+      <div class="ev-filter" id="evFilter">
+        <div class="ev-filter__group">
+          <label class="ev-filter__label" for="filterType">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Type
+          </label>
+          <select id="filterType" class="ev-filter__select" data-filter="type">
+            <option value="all">All Types</option>
+            <option value="exhibition">Live Exhibition</option>
+            <option value="virtual">Virtual Studio Tour</option>
+            <option value="wip">Work-in-Progress Show</option>
+            <option value="workshop">Interactive Workshop</option>
+          </select>
+        </div>
+        <div class="ev-filter__divider"></div>
+        <div class="ev-filter__group">
+          <label class="ev-filter__label" for="filterDate">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Date
+          </label>
+          <select id="filterDate" class="ev-filter__select" data-filter="date">
+            <option value="all">Any Time</option>
+            <option value="weekend">This Weekend</option>
+            <option value="month">This Month</option>
+            <option value="next">Next Month</option>
+            <option value="archive">Archive</option>
+          </select>
+        </div>
+        <div class="ev-filter__divider"></div>
+        <div class="ev-filter__group">
+          <label class="ev-filter__label" for="filterMedium">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+            Medium
+          </label>
+          <select id="filterMedium" class="ev-filter__select" data-filter="medium">
+            <option value="all">All Mediums</option>
+            <option value="painting">Painting</option>
+            <option value="sculpture">Sculpture</option>
+            <option value="digital">Digital Art</option>
+            <option value="fashion">Fashion</option>
+            <option value="photography">Photography</option>
+            <option value="music">Music</option>
+          </select>
+        </div>
+        <button class="ev-filter__btn btn btn-primary" id="evFilterBtn">Find Events</button>
+      </div>
+
+      <!-- Slide dots -->
+      <div class="ev-hero__dots" aria-label="Slideshow navigation">
+        <button class="ev-hero__dot ev-hero__dot--active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="ev-hero__dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="ev-hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HAPPENING NOW ========== -->
+  <section class="ev-grid-section" id="evGrid">
+    <div class="container">
+      <div class="ev-section-head fade-in">
+        <div>
+          <span class="label">Live & Upcoming</span>
+          <h2>Happening Now</h2>
+        </div>
+        <div class="ev-result-count" id="evResultCount">Showing 6 events</div>
+      </div>
+
+      <div class="ev-cards" id="evCards">
+
+        <!-- Card 1 -->
+        <article class="ev-card fade-in" data-type="exhibition" data-date="weekend" data-medium="painting">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?w=600&q=80&fit=crop" alt="Light & Shadow Exhibition" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--live">
+              <span class="ev-card__badge-dot"></span> Live Now
+            </span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="Grace Osei">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Light &amp; Shadow: Paintings in Devotion</h3>
+            <p class="ev-card__artist">Grace Osei · Fine Art</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                May 24–June 14 · Gallery A &amp; Online
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Light &amp; Shadow: Paintings in Devotion" data-artist="Grace Osei" data-date="May 24–June 14" data-location="Gallery Room A &amp; Online" data-tiers='["General Admission (Free)","VIP Opening Night","Digital-Only Access"]'>Reserve Free Ticket</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="ev-card fade-in" data-type="virtual" data-date="month" data-medium="digital">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&fit=crop" alt="Virtual Studio Tour" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--virtual">Virtual</span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="Daniel Marsh">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Digital Psalm: A Virtual Studio Tour</h3>
+            <p class="ev-card__artist">Daniel Marsh · Digital Art</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                June 1 · Online Only
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Digital Psalm: A Virtual Studio Tour" data-artist="Daniel Marsh" data-date="June 1" data-location="Online Only" data-tiers='["Free Access","Behind-the-Scenes Pass","Q&amp;A Session Add-on"]'>Join Live Stream</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="ev-card fade-in" data-type="workshop" data-date="month" data-medium="sculpture">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=600&q=80&fit=crop" alt="Sculpting Workshop" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--limited">Limited Entry</span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="Priya Nair">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Form &amp; Faith: Hands-On Sculpture Workshop</h3>
+            <p class="ev-card__artist">Priya Nair · Sculpture</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                June 7 · Studio B (12 spots)
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Form &amp; Faith: Hands-On Sculpture Workshop" data-artist="Priya Nair" data-date="June 7" data-location="Studio B" data-tiers='["General Admission","VIP Front Row","Livestream Only"]'>Reserve Your Spot</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="ev-card fade-in" data-type="exhibition" data-date="next" data-medium="photography">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&q=80&fit=crop" alt="Portrait Photography Exhibition" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--opening">Opening Reception</span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="Ama Kofi">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Faces of Faith: Portrait Photography</h3>
+            <p class="ev-card__artist">Ama Kofi · Photography</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                July 5–31 · Main Gallery
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Faces of Faith: Portrait Photography" data-artist="Ama Kofi" data-date="July 5–31" data-location="Main Gallery" data-tiers='["General Admission (Free)","Opening Night VIP","Artist Meet &amp; Greet"]'>Reserve Free Ticket</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="ev-card fade-in" data-type="wip" data-date="weekend" data-medium="painting">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=80&fit=crop" alt="Work in Progress Show" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--wip">Work in Progress</span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="Ruth Mensah">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Unfinished Grace: A WIP Canvas Show</h3>
+            <p class="ev-card__artist">Ruth Mensah · Fine Art</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                May 25 · Studio C &amp; Online
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Unfinished Grace: A WIP Canvas Show" data-artist="Ruth Mensah" data-date="May 25" data-location="Studio C &amp; Online" data-tiers='["Free Livestream","In-Person Pass","Collector Preview"]'>View Progress</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="ev-card fade-in" data-type="virtual" data-date="next" data-medium="music">
+          <div class="ev-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80&fit=crop" alt="Worship Music Session" class="ev-card__img" loading="lazy">
+            <span class="ev-card__badge ev-card__badge--virtual">Virtual</span>
+            <button class="ev-card__follow" aria-label="Follow artist" data-artist="James Okafor">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+              Follow
+            </button>
+          </div>
+          <div class="ev-card__body">
+            <h3 class="ev-card__title">Psalms Reimagined: Worship Composition Live</h3>
+            <p class="ev-card__artist">James Okafor · Music</p>
+            <div class="ev-card__meta">
+              <span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                July 12 · Online Only
+              </span>
+            </div>
+            <button class="btn btn-primary ev-card__cta" data-event="Psalms Reimagined: Worship Composition Live" data-artist="James Okafor" data-date="July 12" data-location="Online Only" data-tiers='["Free Access","Backstage Audio Pass","Sheet Music Bundle"]'>Join Live Stream</button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- No results state -->
+      <div class="ev-no-results" id="evNoResults" hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <p>No events match your filters. Try a different combination.</p>
+        <button class="btn btn-outline" id="evClearFilters">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CREATIVE PROGRESS TIMELINE ========== -->
+  <section class="ev-timeline">
+    <div class="container">
+      <div class="ev-section-head fade-in">
+        <div>
+          <span class="label">Behind the Scenes</span>
+          <h2>Creative Progress Diaries</h2>
+          <p class="ev-section-sub">Follow the journey before the gallery doors open. See the process, not just the product.</p>
+        </div>
+      </div>
+
+      <!-- Studio diary cards -->
+      <div class="ev-diary-grid fade-in">
+        <article class="ev-diary-card">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80&fit=crop" alt="Studio diary" class="ev-diary-card__img" loading="lazy">
+          <div class="ev-diary-card__body">
+            <span class="ev-diary-card__tag">Studio Diary</span>
+            <h3>How Grace is building her 8-canvas devotion series for the June gallery</h3>
+            <p>A look at the scripture-soaked process behind "Light &amp; Shadow" — from rough sketches to oil on canvas.</p>
+            <a href="#" class="ev-diary-card__link">Read the diary
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+        <article class="ev-diary-card">
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80&fit=crop" alt="Film diary" class="ev-diary-card__img" loading="lazy">
+          <div class="ev-diary-card__body">
+            <span class="ev-diary-card__tag">Film Diary</span>
+            <h3>Priya's 12-week sculpting journey: clay, faith, and a finished form</h3>
+            <p>Raw footage and reflections from the studio as Priya shapes her first large-scale sculpture for the July showcase.</p>
+            <a href="#" class="ev-diary-card__link">Watch the diary
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+        <article class="ev-diary-card">
+          <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80&fit=crop" alt="Process diary" class="ev-diary-card__img" loading="lazy">
+          <div class="ev-diary-card__body">
+            <span class="ev-diary-card__tag">Process Diary</span>
+            <h3>Daniel's digital-to-print workflow: how a Psalm becomes a pixel</h3>
+            <p>From hand-drawn concept maps to final high-resolution digital output — all anchored in Psalm 19.</p>
+            <a href="#" class="ev-diary-card__link">Read the diary
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- WIP Timeline -->
+      <div class="ev-wip fade-in">
+        <div class="ev-wip__header">
+          <h3>Work in Progress: <span>"Light &amp; Shadow"</span> by Grace Osei</h3>
+          <span class="ev-wip__opens">Opens June 14</span>
+        </div>
+        <div class="ev-wip__track">
+          <div class="ev-wip__step ev-wip__step--done">
+            <div class="ev-wip__step-node">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="ev-wip__step-body">
+              <span class="ev-wip__step-phase">Phase 1</span>
+              <strong>Concept Sketches</strong>
+              <p>Scripture mapping and rough charcoal drafts</p>
+            </div>
+          </div>
+          <div class="ev-wip__connector ev-wip__connector--done"></div>
+          <div class="ev-wip__step ev-wip__step--done">
+            <div class="ev-wip__step-node">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="ev-wip__step-body">
+              <span class="ev-wip__step-phase">Phase 2</span>
+              <strong>Raw Materials</strong>
+              <p>Linen canvas primed, palette selected</p>
+            </div>
+          </div>
+          <div class="ev-wip__connector ev-wip__connector--done"></div>
+          <div class="ev-wip__step ev-wip__step--active">
+            <div class="ev-wip__step-node">
+              <span class="ev-wip__pulse"></span>
+            </div>
+            <div class="ev-wip__step-body">
+              <span class="ev-wip__step-phase">Phase 3 — Now</span>
+              <strong>Painting in Progress</strong>
+              <p>Studio open for diary followers to watch live</p>
+            </div>
+          </div>
+          <div class="ev-wip__connector"></div>
+          <div class="ev-wip__step">
+            <div class="ev-wip__step-node ev-wip__step-node--future"></div>
+            <div class="ev-wip__step-body">
+              <span class="ev-wip__step-phase">Phase 4</span>
+              <strong>Final Build &amp; Framing</strong>
+              <p>Photography, framing, and gallery installation</p>
+            </div>
+          </div>
+          <div class="ev-wip__connector"></div>
+          <div class="ev-wip__step">
+            <div class="ev-wip__step-node ev-wip__step-node--future"></div>
+            <div class="ev-wip__step-body">
+              <span class="ev-wip__step-phase">Phase 5</span>
+              <strong>Exhibition Opens</strong>
+              <div class="ev-wip__countdown" id="wipCountdown" data-target="2026-06-14">
+                <span class="ev-wip__cd-block"><span id="cdDays">--</span><small>days</small></span>
+                <span class="ev-wip__cd-sep">:</span>
+                <span class="ev-wip__cd-block"><span id="cdHours">--</span><small>hrs</small></span>
+                <span class="ev-wip__cd-sep">:</span>
+                <span class="ev-wip__cd-block"><span id="cdMins">--</span><small>min</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORY ROWS ========== -->
+  <section class="ev-categories">
+    <div class="container">
+      <div class="ev-section-head fade-in">
+        <div>
+          <span class="label">Browse by Collection</span>
+          <h2>Find Your Focus</h2>
+        </div>
+      </div>
+
+      <!-- Solo Exhibitions -->
+      <div class="ev-row fade-in">
+        <div class="ev-row__head">
+          <h3>Solo Exhibitions</h3>
+          <p>Deep dives into a single artist's mind and mission</p>
+          <a href="#" class="ev-row__more">See all
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="ev-row__scroll">
+          <div class="ev-row__track" id="soloTrack">
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?w=400&q=80&fit=crop" alt="Solo Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Light &amp; Shadow</strong>
+                <span>Grace Osei · June 14</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400&q=80&fit=crop" alt="Solo Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Faces of Faith</strong>
+                <span>Ama Kofi · July 5</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&q=80&fit=crop" alt="Solo Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Unfinished Grace</strong>
+                <span>Ruth Mensah · May 25</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80&fit=crop" alt="Solo Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Sacred Lines</strong>
+                <span>Kemi Adeyemi · Aug 3</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&q=80&fit=crop" alt="Solo Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Vessels of Light</strong>
+                <span>Miriam Diallo · Sep 10</span>
+              </div>
+            </div>
+          </div>
+          <button class="ev-row__arrow ev-row__arrow--prev" aria-label="Scroll left" data-track="soloTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="ev-row__arrow ev-row__arrow--next" aria-label="Scroll right" data-track="soloTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive & Workshops -->
+      <div class="ev-row fade-in">
+        <div class="ev-row__head">
+          <h3>Interactive &amp; Workshops</h3>
+          <p>Events where the audience participates in the creative process</p>
+          <a href="#" class="ev-row__more">See all
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="ev-row__scroll">
+          <div class="ev-row__track" id="workshopTrack">
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=400&q=80&fit=crop" alt="Workshop" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Form &amp; Faith</strong>
+                <span>Priya Nair · June 7</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&q=80&fit=crop" alt="Workshop" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Write the Vision</strong>
+                <span>Esther Yaw · June 21</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80&fit=crop" alt="Workshop" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Design &amp; Devotion</strong>
+                <span>Marcus Webb · July 19</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=400&q=80&fit=crop" alt="Workshop" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Craft &amp; Call</strong>
+                <span>Adaeze Eze · Aug 9</span>
+              </div>
+            </div>
+          </div>
+          <button class="ev-row__arrow ev-row__arrow--prev" aria-label="Scroll left" data-track="workshopTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="ev-row__arrow ev-row__arrow--next" aria-label="Scroll right" data-track="workshopTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Digital & Media Art -->
+      <div class="ev-row fade-in">
+        <div class="ev-row__head">
+          <h3>Digital &amp; Media Art</h3>
+          <p>Online galleries and VR walkthroughs for remote visitors</p>
+          <a href="#" class="ev-row__more">See all
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="ev-row__scroll">
+          <div class="ev-row__track" id="digitalTrack">
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80&fit=crop" alt="Digital Exhibition" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Digital Psalm</strong>
+                <span>Daniel Marsh · June 1</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80&fit=crop" alt="Music Event" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Psalms Reimagined</strong>
+                <span>James Okafor · July 12</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&q=80&fit=crop" alt="Digital Art" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Pixel &amp; Prayer</strong>
+                <span>Yemi Bashorun · Aug 22</span>
+              </div>
+            </div>
+            <div class="ev-cat-card">
+              <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&q=80&fit=crop" alt="Film Event" loading="lazy">
+              <div class="ev-cat-card__info">
+                <strong>Sacred Frames</strong>
+                <span>Nadia Cruz · Sep 5</span>
+              </div>
+            </div>
+          </div>
+          <button class="ev-row__arrow ev-row__arrow--prev" aria-label="Scroll left" data-track="digitalTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="ev-row__arrow ev-row__arrow--next" aria-label="Scroll right" data-track="digitalTrack">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Your Gift Belongs on a Stage</span>
+        <h2>Share Your Work with the Community</h2>
+        <p>Are you a creator with an upcoming exhibition, workshop, or studio tour? Submit your event and let the Luminara community find you.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Submit Your Event
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="mentorship.html" class="btn btn-outline">Find a Mentor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== TICKET MODAL ========== -->
+  <div class="ev-modal-backdrop" id="evModalBackdrop" aria-hidden="true"></div>
+  <aside class="ev-modal" id="evModal" role="dialog" aria-modal="true" aria-labelledby="evModalTitle" hidden>
+    <div class="ev-modal__header">
+      <div>
+        <p class="ev-modal__event-name" id="evModalTitle"></p>
+        <p class="ev-modal__artist" id="evModalArtist"></p>
+      </div>
+      <button class="ev-modal__close" id="evModalClose" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="ev-modal__body">
+      <div class="ev-modal__meta" id="evModalMeta"></div>
+
+      <h4 class="ev-modal__tiers-label">Choose Your Ticket</h4>
+      <div class="ev-modal__tiers" id="evModalTiers"></div>
+
+      <div class="ev-modal__cal">
+        <p class="ev-modal__cal-label">Add to calendar</p>
+        <div class="ev-modal__cal-btns">
+          <a href="#" class="ev-modal__cal-btn" id="evCalGoogle" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Google Calendar
+          </a>
+          <a href="#" class="ev-modal__cal-btn" id="evCalApple" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Apple iCal
+          </a>
+        </div>
+      </div>
+
+      <div class="ev-modal__follow-wrap" id="evModalFollowWrap">
+        <p>Get early-bird tickets &amp; weekly diaries from <strong id="evModalFollowArtist"></strong></p>
+        <form class="ev-modal__follow-form" id="evModalFollowForm">
+          <input type="email" placeholder="your@email.com" required class="ev-modal__email">
+          <button type="submit" class="btn btn-primary ev-modal__follow-btn">Follow Progress</button>
+        </form>
+      </div>
+
+      <button class="btn btn-primary ev-modal__reserve" id="evModalReserve">Confirm Reservation</button>
+    </div>
+  </aside>
+
+  <!-- ========== FOLLOW MICRO-POPUP ========== -->
+  <div class="ev-follow-popup" id="evFollowPopup" hidden>
+    <p>Follow <strong id="evFollowArtistName"></strong>'s progress</p>
+    <form class="ev-follow-popup__form" id="evFollowForm">
+      <input type="email" placeholder="your@email.com" required class="ev-follow-popup__email">
+      <button type="submit" class="btn btn-primary">Follow</button>
+    </form>
+    <button class="ev-follow-popup__close" id="evFollowPopupClose" aria-label="Close">×</button>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ---- Hero Slideshow ----
+    const slides = document.querySelectorAll('.ev-hero__slide');
+    const dots = document.querySelectorAll('.ev-hero__dot');
+    let currentSlide = 0;
+    function goToSlide(i) {
+      slides[currentSlide].classList.remove('ev-hero__slide--active');
+      dots[currentSlide].classList.remove('ev-hero__dot--active');
+      currentSlide = i;
+      slides[currentSlide].classList.add('ev-hero__slide--active');
+      dots[currentSlide].classList.add('ev-hero__dot--active');
+    }
+    dots.forEach((d, i) => d.addEventListener('click', () => goToSlide(i)));
+    setInterval(() => goToSlide((currentSlide + 1) % slides.length), 5000);
+
+    // ---- Filter ----
+    const evCards = document.querySelectorAll('.ev-card');
+    const resultCount = document.getElementById('evResultCount');
+    const noResults = document.getElementById('evNoResults');
+    function applyFilters() {
+      const type = document.getElementById('filterType').value;
+      const date = document.getElementById('filterDate').value;
+      const medium = document.getElementById('filterMedium').value;
+      let visible = 0;
+      evCards.forEach(card => {
+        const match =
+          (type === 'all' || card.dataset.type === type) &&
+          (date === 'all' || card.dataset.date === date) &&
+          (medium === 'all' || card.dataset.medium === medium);
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      resultCount.textContent = `Showing ${visible} event${visible !== 1 ? 's' : ''}`;
+      noResults.hidden = visible > 0;
+    }
+    document.getElementById('evFilterBtn').addEventListener('click', applyFilters);
+    document.getElementById('evClearFilters')?.addEventListener('click', () => {
+      document.querySelectorAll('.ev-filter__select').forEach(s => s.value = 'all');
+      applyFilters();
+    });
+
+    // ---- Ticket Modal ----
+    const modal = document.getElementById('evModal');
+    const backdrop = document.getElementById('evModalBackdrop');
+    function openModal(btn) {
+      const event = btn.dataset.event;
+      const artist = btn.dataset.artist;
+      const date = btn.dataset.date;
+      const location = btn.dataset.location;
+      const tiers = JSON.parse(btn.dataset.tiers);
+      document.getElementById('evModalTitle').textContent = event;
+      document.getElementById('evModalArtist').textContent = artist;
+      document.getElementById('evModalFollowArtist').textContent = artist;
+      document.getElementById('evModalFollowWrap').querySelector('strong').textContent = artist;
+      document.getElementById('evModalMeta').innerHTML =
+        `<span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>${date}</span>
+         <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${location}</span>`;
+      const tiersEl = document.getElementById('evModalTiers');
+      tiersEl.innerHTML = tiers.map((t, i) =>
+        `<label class="ev-modal__tier${i === 0 ? ' ev-modal__tier--selected' : ''}">
+          <input type="radio" name="ticket" value="${t}"${i === 0 ? ' checked' : ''}>
+          <span>${t}</span>
+        </label>`
+      ).join('');
+      tiersEl.querySelectorAll('.ev-modal__tier').forEach(t => {
+        t.querySelector('input').addEventListener('change', () => {
+          tiersEl.querySelectorAll('.ev-modal__tier').forEach(x => x.classList.remove('ev-modal__tier--selected'));
+          t.classList.add('ev-modal__tier--selected');
+        });
+      });
+      modal.hidden = false;
+      backdrop.classList.add('ev-modal-backdrop--active');
+      document.body.style.overflow = 'hidden';
+      modal.classList.add('ev-modal--open');
+    }
+    function closeModal() {
+      modal.classList.remove('ev-modal--open');
+      backdrop.classList.remove('ev-modal-backdrop--active');
+      document.body.style.overflow = '';
+      setTimeout(() => { modal.hidden = true; }, 320);
+    }
+    document.querySelectorAll('.ev-card__cta').forEach(btn => btn.addEventListener('click', () => openModal(btn)));
+    document.getElementById('evModalClose').addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+    document.getElementById('evModalReserve').addEventListener('click', () => {
+      document.getElementById('evModalReserve').textContent = '✓ Reserved!';
+      setTimeout(closeModal, 1200);
+    });
+    document.getElementById('evModalFollowForm')?.addEventListener('submit', e => {
+      e.preventDefault();
+      e.target.innerHTML = '<p style="color:var(--forest);font-weight:600">✓ You\'re following this artist!</p>';
+    });
+
+    // ---- Follow button micro-popup ----
+    const followPopup = document.getElementById('evFollowPopup');
+    document.querySelectorAll('.ev-card__follow').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        document.getElementById('evFollowArtistName').textContent = btn.dataset.artist;
+        followPopup.hidden = false;
+        followPopup.classList.add('ev-follow-popup--visible');
+      });
+    });
+    document.getElementById('evFollowPopupClose').addEventListener('click', () => {
+      followPopup.classList.remove('ev-follow-popup--visible');
+      setTimeout(() => { followPopup.hidden = true; }, 260);
+    });
+    document.getElementById('evFollowForm').addEventListener('submit', e => {
+      e.preventDefault();
+      followPopup.innerHTML = '<p style="padding:20px 24px;font-weight:600;color:var(--forest)">✓ You\'re following this creator!</p>';
+      setTimeout(() => {
+        followPopup.classList.remove('ev-follow-popup--visible');
+        setTimeout(() => { followPopup.hidden = true; }, 260);
+      }, 1800);
+    });
+
+    // ---- Category row scroll arrows ----
+    document.querySelectorAll('.ev-row__arrow').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const track = document.getElementById(btn.dataset.track);
+        const cardW = track.querySelector('.ev-cat-card')?.offsetWidth + 16 || 260;
+        track.scrollBy({ left: btn.classList.contains('ev-row__arrow--prev') ? -cardW * 2 : cardW * 2, behavior: 'smooth' });
+      });
+    });
+
+    // ---- WIP Countdown ----
+    function updateCountdown() {
+      const el = document.getElementById('wipCountdown');
+      if (!el) return;
+      const target = new Date(el.dataset.target).getTime();
+      const now = Date.now();
+      const diff = target - now;
+      if (diff <= 0) { el.textContent = 'Opening Today!'; return; }
+      const days = Math.floor(diff / 86400000);
+      const hrs = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+      document.getElementById('cdHours').textContent = String(hrs).padStart(2, '0');
+      document.getElementById('cdMins').textContent = String(mins).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+  </script>
+</body>
+</html>

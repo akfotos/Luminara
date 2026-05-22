@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminara — A Faith-Driven Creative Community</title>
+  <meta name="description" content="Luminara is a curated space where faith-driven creatives connect, showcase their work, and grow together.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="explore.html">Explore</a>
+    <a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a>
+    <a href="stories.html">Stories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__left">
+        <span class="label hero__label">Faith-Driven Creative Community</span>
+        <h1 class="hero__title">
+          Where Creativity Meets Purpose
+          <span>A curated space for creatives who lead with faith.</span>
+        </h1>
+        <p class="hero__description">
+          Luminara brings together photographers, designers, writers, and artists who share a calling to create with intention and inspire through their craft.
+        </p>
+        <div class="hero__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join the Community
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="featured.html" class="btn btn-outline">Explore Work</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=900&q=85&fit=crop" alt="Faith-driven creative at work" class="hero__image">
+      </div>
+    </div>
+
+    <!-- Featured Creator Card -->
+    <div class="hero__creator-card">
+      <div class="hero__creator-inner container">
+        <div class="hero__creator-info">
+          <div class="hero__creator-avatar"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=112&h=112&q=85&fit=crop&crop=faces" alt="Sarah Mitchell"></div>
+          <div class="hero__creator-details">
+            <h4>Sarah Mitchell</h4>
+            <p>Fine Art Photographer · Portland, OR</p>
+          </div>
+        </div>
+        <span class="label hero__creator-label">Featured Creator of the Month</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">Browse by Craft</span>
+        <h2>Find Your Creative Space</h2>
+        <p>Discover communities of faith-driven creatives organized by discipline and passion.</p>
+      </div>
+
+      <div class="categories__grid">
+        <!-- Photography -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="10" width="40" height="28" rx="3"/>
+              <circle cx="24" cy="24" r="8"/>
+              <circle cx="24" cy="24" r="4"/>
+              <path d="M14 10V7h6v3"/>
+            </svg>
+          </div>
+          <h3>Photography</h3>
+          <p>Portraits, landscapes, and visual storytelling rooted in faith.</p>
+          <span class="category-card__count">240+ Creators</span>
+        </div>
+
+        <!-- Design -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+              <path d="M4 14l20 10 20-10"/>
+              <path d="M24 44V24"/>
+            </svg>
+          </div>
+          <h3>Design</h3>
+          <p>Brand identity, UI/UX, and graphic design with purpose.</p>
+          <span class="category-card__count">180+ Creators</span>
+        </div>
+
+        <!-- Writing -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 6h32v36H8z"/>
+              <path d="M14 14h20M14 22h20M14 30h12"/>
+              <path d="M32 36l8-8-4-4-8 8v4h4z"/>
+            </svg>
+          </div>
+          <h3>Writing</h3>
+          <p>Devotionals, poetry, content creation, and storytelling.</p>
+          <span class="category-card__count">150+ Creators</span>
+        </div>
+
+        <!-- Music  -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 38V12l22-6v26"/>
+              <circle cx="12" cy="38" r="4"/>
+              <circle cx="34" cy="32" r="4"/>
+              <path d="M16 20l22-6"/>
+            </svg>
+          </div>
+          <h3>Music</h3>
+          <p>Original compositions, worship leading, and audio production.</p>
+          <span class="category-card__count">120+ Creators</span>
+        </div>
+
+        <!-- Film & Video -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="10" width="36" height="28" rx="3"/>
+              <polygon points="20,18 20,30 32,24"/>
+              <path d="M6 16h36M6 32h36"/>
+            </svg>
+          </div>
+          <h3>Film & Video</h3>
+          <p>Documentaries, short films, and visual narratives of faith.</p>
+          <span class="category-card__count">90+ Creators</span>
+        </div>
+
+        <!-- Food & Cooking -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="10" width="36" height="28" rx="3"/>
+              <polygon points="20,18 20,30 32,24"/>
+              <path d="M6 16h36M6 32h36"/>
+            </svg>
+          </div>
+          <h3>Film & Video</h3>
+          <p>Documentaries, short films, and visual narratives of faith.</p>
+          <span class="category-card__count">90+ Creators</span>
+        </div>
+
+        <!-- Fine Art -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 40L24 8l16 32H8z"/>
+              <circle cx="36" cy="14" r="4"/>
+              <path d="M16 28h16"/>
+            </svg>
+          </div>
+          <h3>Fine Art</h3>
+          <p>Painting, illustration, sculpture, and mixed media works.</p>
+          <span class="category-card__count">110+ Creators</span>
+        </div>
+
+        <!-- Podcasting -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="16" y="6" width="16" height="24" rx="8"/>
+              <path d="M10 24a14 14 0 0028 0"/>
+              <path d="M24 36v8M18 44h12"/>
+            </svg>
+          </div>
+          <h3>Podcasting</h3>
+          <p>Faith conversations, interviews, and audio storytelling.</p>
+          <span class="category-card__count">75+ Creators</span>
+        </div>
+
+        <!-- Crafts & Handmade -->
+        <div class="category-card fade-in">
+          <div class="category-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4c-6 8-16 14-16 24a16 16 0 0032 0C40 18 30 12 24 4z"/>
+              <path d="M24 28v12"/>
+              <path d="M18 34l6-6 6 6"/>
+            </svg>
+          </div>
+          <h3>Crafts & Handmade</h3>
+          <p>Handcrafted goods, calligraphy, and artisanal creations.</p>
+          <span class="category-card__count">95+ Creators</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED WORKS ========== -->
+  <section class="featured-works" id="featured">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">Curated Collection</span>
+        <h2>Featured Works</h2>
+        <p>A handpicked selection of outstanding creative work from our community.</p>
+      </div>
+
+      <div class="works__grid">
+        <!-- Large Card -->
+        <div class="work-card fade-in">
+          <div class="work-card__bg">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85&fit=crop" alt="Sacred Spaces" class="work-card__img">
+          </div>
+          <span class="work-card__tag">Photography</span>
+          <div class="work-card__overlay">
+            <h3>Sacred Spaces</h3>
+            <p>by Elijah Okonkwo · Documentary Series</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="work-card fade-in">
+          <div class="work-card__bg">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&fit=crop" alt="Grace Branding Suite" class="work-card__img">
+          </div>
+          <span class="work-card__tag">Design</span>
+          <div class="work-card__overlay">
+            <h3>Grace Branding Suite</h3>
+            <p>by Hannah Kim · Brand Identity</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="work-card fade-in">
+          <div class="work-card__bg">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=85&fit=crop" alt="Light Within" class="work-card__img">
+          </div>
+          <span class="work-card__tag">Fine Art</span>
+          <div class="work-card__overlay">
+            <h3>Light Within</h3>
+            <p>by Maria Santos · Oil on Canvas Series</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="work-card fade-in">
+          <div class="work-card__bg">
+            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=85&fit=crop" alt="Still Small Voice" class="work-card__img">
+          </div>
+          <span class="work-card__tag">Film</span>
+          <div class="work-card__overlay">
+            <h3>Still, Small Voice</h3>
+            <p>by David Chen · Short Film</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="work-card fade-in">
+          <div class="work-card__bg">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=85&fit=crop" alt="Everyday Psalms" class="work-card__img">
+          </div>
+          <span class="work-card__tag">Writing</span>
+          <div class="work-card__overlay">
+            <h3>Everyday Psalms</h3>
+            <p>by Ruth Adeyemi · Poetry Collection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROMISE / SAFETY ========== -->
+  <section class="promise" id="promise">
+    <div class="container">
+      <div class="promise__content">
+        <div class="promise__text fade-in">
+          <span class="label">Our Promise</span>
+          <h2>A Safe Space to Create & Grow</h2>
+          <p>Luminara is built on the belief that creativity flourishes in community. We're committed to providing a space that honors both your craft and your faith.</p>
+
+          <div class="promise__features">
+            <div class="promise__feature">
+              <div class="promise__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <p>Community guidelines rooted in respect, grace, and encouragement</p>
+            </div>
+            <div class="promise__feature">
+              <div class="promise__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                  <line x1="9" y1="9" x2="9.01" y2="9"/>
+                  <line x1="15" y1="9" x2="15.01" y2="9"/>
+                </svg>
+              </div>
+              <p>Curated content to ensure quality and alignment with shared values</p>
+            </div>
+            <div class="promise__feature">
+              <div class="promise__feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <p>Mentorship programs connecting emerging creatives with established artists</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="promise__stats fade-in">
+          <div class="stat-card">
+            <div class="stat-card__number" data-count="1200">0</div>
+            <div class="stat-card__label">Active Creators</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number" data-count="48">0</div>
+            <div class="stat-card__label">Countries</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number" data-count="3500">0</div>
+            <div class="stat-card__label">Works Showcased</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number" data-count="96">0</div>
+            <div class="stat-card__label">% Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="label">Community Stories</span>
+        <h2>Voices from Luminara</h2>
+        <p>Hear from the creatives who call Luminara home.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"Luminara gave me the courage to share my work with a community that truly understands what it means to create from a place of faith."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&q=85&fit=crop&crop=faces" alt="Amara Johnson"></div>
+            <div>
+              <div class="testimonial-card__name">Amara Johnson</div>
+              <div class="testimonial-card__role">Portrait Photographer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"The mentorship I found here transformed my approach to design. It's more than a portfolio — it's a family of purpose-driven creatives."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=85&fit=crop&crop=faces" alt="Daniel Lee"></div>
+            <div>
+              <div class="testimonial-card__name">Daniel Lee</div>
+              <div class="testimonial-card__role">Brand Designer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <p class="testimonial-card__quote">"I've been part of many creative communities, but Luminara is the only one where I feel both seen and safe. It's the space I've been praying for."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&q=85&fit=crop&crop=faces" alt="Grace Williams"></div>
+            <div>
+              <div class="testimonial-card__name">Grace Williams</div>
+              <div class="testimonial-card__role">Worship Leader & Songwriter</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Ready to Begin?</span>
+        <h2>Your Creative Journey Starts Here</h2>
+        <p>Join a growing community of faith-driven creatives and share your God-given gifts with the world.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join Luminara Today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="learn-more.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="guidelines.html">Guidelines</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="events.html">Events</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="help.html">Help Center</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <!-- Twitter / X -->
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More — How Luminara Works</title>
+  <meta name="description" content="Discover how Luminara's faith-aligned platform works: phased architecture, two-layer moderation, recommended tech stack, and culture-first design strategy.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (Learn More Nav) ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="#architecture" class="nav__link">Architecture</a></li>
+        <li><a href="#moderation" class="nav__link">Moderation</a></li>
+        <li><a href="#tech-stack" class="nav__link">Tech Stack</a></li>
+        <li><a href="#culture" class="nav__link">Culture-First</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="index.html" class="btn btn-outline nav__btn">Back to Home</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <a href="#architecture">Architecture</a>
+    <a href="#moderation">Moderation</a>
+    <a href="#tech-stack">Tech Stack</a>
+    <a href="#culture">Culture-First</a>
+    <a href="index.html">Back to Home</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">How Luminara Works</span>
+      <h1>A Faith-Aligned Creative Ecosystem</h1>
+      <p>Luminara is a highly curated, faith-aligned platform designed to solve a major issue with mainstream social media: the exposure of users to explicit or harmful material while trying to find or share uplifting content.</p>
+    </div>
+  </section>
+
+  <!-- ========== 1. ARCHITECTURE & PHASED ROLLOUT ========== -->
+  <section id="architecture" style="padding: 100px 0; background-color: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align: center; margin-bottom: 64px;">
+        <span class="label">The Blueprint</span>
+        <h2>Core Architecture & Phased Rollout</h2>
+        <p>Building a multi-vertical platform supporting video, audio, text, and imagery is complex. Luminara approaches this using a phased roadmap to avoid over-engineering at launch.</p>
+      </div>
+
+      <div class="lm-phases">
+
+        <div class="lm-phase fade-in">
+          <div class="lm-phase__badge">Phase 1</div>
+          <div class="lm-phase__content">
+            <h3>The Foundation</h3>
+            <p>Focuses solely on authentication, basic profiles, video (Film), and audio (Music) pipelines. This allows the development team to iron out server loads and the upload/transcoding pipeline early.</p>
+          </div>
+        </div>
+
+        <div class="lm-phase fade-in">
+          <div class="lm-phase__badge lm-phase__badge--mid">Phase 2</div>
+          <div class="lm-phase__content">
+            <h3>Content Expansion</h3>
+            <p>Introduces lighter data types like text (Poetry) and images (Visual Art/Photography), building on the stable infrastructure established in Phase 1.</p>
+          </div>
+        </div>
+
+        <div class="lm-phase fade-in">
+          <div class="lm-phase__badge lm-phase__badge--late">Phase 3</div>
+          <div class="lm-phase__content">
+            <h3>Monetization & Engagement</h3>
+            <p>Introduces monetization features (the Hire system) and social engagement loops (custom reactions), completing the full creator economy ecosystem.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 2. MODERATION ENGINE ========== -->
+  <section id="moderation" style="padding: 100px 0; background-color: var(--off-white);">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align: center; margin-bottom: 64px;">
+        <span class="label">Safety by Design</span>
+        <h2>The Two-Layer Moderation Engine</h2>
+        <p>Because Luminara promises a completely safe space for all ages, moderation isn't an afterthought — it's the core product feature. It utilizes a hybrid approach to balance speed and human oversight.</p>
+      </div>
+
+      <div class="lm-moderation fade-in">
+
+        <div class="lm-mod-layer">
+          <div class="lm-mod-layer__header">
+            <div class="lm-mod-layer__number">1</div>
+            <h3>Automated Screening</h3>
+          </div>
+          <p class="lm-mod-layer__tech">AWS Rekognition / Google AI</p>
+          <p>Computer vision APIs scan pixels instantly for explicit content or violence, acting as an immediate digital firewall. Content that passes moves directly to publication preview; flagged content enters a temporary unlisted queue for human review.</p>
+        </div>
+
+        <div class="lm-mod-flow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
+        </div>
+
+        <div class="lm-mod-layer">
+          <div class="lm-mod-layer__header">
+            <div class="lm-mod-layer__number lm-mod-layer__number--human">2</div>
+            <h3>Human Moderation Review</h3>
+          </div>
+          <p class="lm-mod-layer__tech">Contextual, Values-Based Compliance</p>
+          <p>Algorithms lack nuance. They cannot easily distinguish between a gratuitous depiction of violence and a sensitive artistic depiction of a biblical event (like the crucifixion). Human reviewers ensure contextual, values-based compliance before or shortly after content goes live.</p>
+        </div>
+
+        <div class="lm-mod-outcomes">
+          <div class="lm-mod-outcome lm-mod-outcome--approved">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Approved — Live Publication
+          </div>
+          <div class="lm-mod-outcome lm-mod-outcome--rejected">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+            Rejected — Triggers Strike
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. TECH STACK ========== -->
+  <section id="tech-stack" style="padding: 100px 0; background-color: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align: center; margin-bottom: 64px;">
+        <span class="label">Under the Hood</span>
+        <h2>Recommended Tech Stack</h2>
+        <p>The technical architecture is optimized for a mobile-first, global audience with specific attention paid to users in regions with varying internet stability, such as Sub-Saharan Africa.</p>
+      </div>
+
+      <div class="lm-stack">
+
+        <div class="lm-stack__card fade-in">
+          <div class="lm-stack__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h4>Next.js (React)</h4>
+          <p>Uses Server-Side Rendering (SSR). This is crucial for creative portfolios so that search engines can easily index and rank individual artists' names and works (SEO).</p>
+        </div>
+
+        <div class="lm-stack__card fade-in">
+          <div class="lm-stack__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/>
+              <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/>
+              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+            </svg>
+          </div>
+          <h4>PostgreSQL & Redis</h4>
+          <p>PostgreSQL handles complex relational data (linking users to portfolios, collaboration posts, and metrics). Redis acts as a fast-access memory layer to cache trending feeds and handle rapid session data.</p>
+        </div>
+
+        <div class="lm-stack__card fade-in">
+          <div class="lm-stack__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32">
+              <polygon points="23,7 16,12 23,17"/>
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+            </svg>
+          </div>
+          <h4>Cloudflare Stream / Mux</h4>
+          <p>Rather than forcing a mobile user to download a raw 2GB video file, these services use Adaptive Bitrate Streaming. They dynamically slice video files into tiny segments, adjusting resolution on the fly based on the user's connection strength.</p>
+        </div>
+
+        <div class="lm-stack__card fade-in">
+          <div class="lm-stack__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h4>SendGrid / Resend Relay</h4>
+          <p>To protect artist privacy, the platform uses an email relay system. When a church wants to hire a photographer, the message goes through the platform's system, hiding the artist's personal email until they choose to reply.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. CULTURE-FIRST DESIGN ========== -->
+  <section id="culture" style="padding: 100px 0; background-color: var(--forest); color: var(--cream);">
+    <div class="container">
+      <div class="section-header fade-in" style="text-align: center; margin-bottom: 64px;">
+        <span class="label" style="color: var(--sage-light);">Design Philosophy</span>
+        <h2 style="color: var(--cream);">Culture-First Design Strategy</h2>
+        <p style="color: var(--sage-light);">Unlike mainstream tech platforms that maximize user retention via conflict or standard metrics, Luminara's design direction focuses on creating a "sanctuary" feel.</p>
+      </div>
+
+      <div class="lm-culture">
+
+        <div class="lm-culture__card fade-in">
+          <div class="lm-culture__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Faith-Aligned Reactions</h3>
+          <p>By replacing the generic "Like" button with specific buttons like <em>Inspired</em>, <em>Blessed</em>, <em>Amen</em>, and <em>Beautiful</em>, the platform shapes user behavior toward encouragement rather than superficial dopamine loops.</p>
+          <div class="lm-reactions">
+            <span class="lm-reaction">Inspired</span>
+            <span class="lm-reaction">Blessed</span>
+            <span class="lm-reaction">Amen</span>
+            <span class="lm-reaction">Beautiful</span>
+          </div>
+        </div>
+
+        <div class="lm-culture__card fade-in">
+          <div class="lm-culture__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3>Editorial Aesthetics</h3>
+          <p>Using warm cream backgrounds and classic serif fonts (Playfair Display) mimics physical high-end art and literary magazines, positioning the platform as prestigious and dignified rather than corporate.</p>
+          <div class="lm-aesthetic-preview">
+            <span class="lm-aesthetic-tag">Warm Cream Palette</span>
+            <span class="lm-aesthetic-tag">Classic Serif Typography</span>
+            <span class="lm-aesthetic-tag">Magazine-Grade Layouts</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Ready to Create?</span>
+        <h2>Join the Luminara Community</h2>
+        <p>Step inside a sanctuary built for faith-driven creatives — where your craft and your calling grow together.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">
+            Join Luminara Today
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Luminara</h3>
+          <p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p>
+        </div>
+
+        <div class="footer__column">
+          <h4>Explore</h4>
+          <a href="featured.html">Featured Works</a>
+          <a href="explore.html">Categories</a>
+          <a href="#">Creators</a>
+          <a href="#">Collections</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Community</h4>
+          <a href="promise.html">Our Story</a>
+          <a href="#">Guidelines</a>
+          <a href="#">Mentorship</a>
+          <a href="#">Events</a>
+        </div>
+
+        <div class="footer__column">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75,15.02 15.5,12 9.75,8.98"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
