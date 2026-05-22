@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fine Art — Luminara</title>
+  <meta name="description" content="Painting, illustration, sculpture, and mixed media works from Luminara's fine art community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions"><a href="login.html" class="btn btn-outline nav__btn">Log In</a><a href="join.html" class="btn btn-primary nav__btn">Join Now</a></div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="explore.html">Explore</a><a href="featured.html">Featured</a><a href="promise.html">Our Promise</a><a href="stories.html">Stories</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <section class="cat-hero" style="background-image:url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1600&q=85&fit=crop')">
+    <div class="cat-hero__overlay"></div>
+    <div class="container cat-hero__inner">
+      <a href="explore.html" class="cat-hero__back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Categories</a>
+      <div class="cat-hero__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 40L24 8l16 32H8z"/><circle cx="36" cy="14" r="4"/><path d="M16 28h16"/></svg>
+      </div>
+      <span class="label cat-hero__label">Creative Discipline</span>
+      <h1>Fine Art</h1>
+      <p>Painting, illustration, sculpture, and mixed media works. 110+ fine artists expressing the inexpressible through their hands.</p>
+      <div class="cat-hero__stats">
+        <div class="cat-hero__stat"><strong>110+</strong><span>Creators</span></div>
+        <div class="cat-hero__stat"><strong>780+</strong><span>Works</span></div>
+        <div class="cat-hero__stat"><strong>27</strong><span>Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cat-filter-bar">
+    <div class="container cat-filter-bar__inner">
+      <div class="cat-filter-bar__tabs" id="catTabs">
+        <button class="cat-tab cat-tab--active" data-filter="all">All Works</button>
+        <button class="cat-tab" data-filter="painting">Painting</button>
+        <button class="cat-tab" data-filter="illustration">Illustration</button>
+        <button class="cat-tab" data-filter="sculpture">Sculpture</button>
+        <button class="cat-tab" data-filter="mixed-media">Mixed Media</button>
+      </div>
+      <span class="cat-filter-bar__count" id="catCount">Showing 8 works</span>
+    </div>
+  </div>
+
+  <section class="cat-works">
+    <div class="container">
+      <div class="cat-grid" id="catGrid">
+        <article class="cat-work-card fade-in" data-tag="painting">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80&fit=crop" alt="Light Within" loading="lazy">
+            <span class="cat-work-card__tag">Painting</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Light Within</h3>
+            <p class="cat-work-card__author">Maria Santos</p>
+            <p class="cat-work-card__desc">An oil on canvas series of eight panels — each one exploring a different name of God through colour and form.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="illustration">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=80&fit=crop" alt="The Beatitudes" loading="lazy">
+            <span class="cat-work-card__tag">Illustration</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Beatitudes</h3>
+            <p class="cat-work-card__author">Kemi Adeyemi</p>
+            <p class="cat-work-card__desc">Eight illustrated panels of the Beatitudes — detailed, ink-and-watercolour portraits of the blessed and the beautiful.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="sculpture">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=600&q=80&fit=crop" alt="Form & Faith" loading="lazy">
+            <span class="cat-work-card__tag">Sculpture</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Form &amp; Faith</h3>
+            <p class="cat-work-card__author">Priya Nair</p>
+            <p class="cat-work-card__desc">A large-scale clay sculpture series — figures in postures of surrender, worship, and unguarded joy.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="mixed-media">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80&fit=crop" alt="Torn & Mended" loading="lazy">
+            <span class="cat-work-card__tag">Mixed Media</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Torn &amp; Mended</h3>
+            <p class="cat-work-card__author">Grace Osei</p>
+            <p class="cat-work-card__desc">Collage and paint on torn Scripture pages — raw, vulnerable pieces about healing, wholeness, and redemption.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="painting">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80&fit=crop" alt="Light & Shadow" loading="lazy">
+            <span class="cat-work-card__tag">Painting</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Light &amp; Shadow: Paintings in Devotion</h3>
+            <p class="cat-work-card__author">Grace Osei</p>
+            <p class="cat-work-card__desc">An 8-canvas devotion series exploring the dual nature of light as both physical and spiritual phenomenon.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="illustration">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1501386761578-eaa54b8b8db7?w=600&q=80&fit=crop" alt="Parable Series" loading="lazy">
+            <span class="cat-work-card__tag">Illustration</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Parable Series</h3>
+            <p class="cat-work-card__author">Kemi Adeyemi</p>
+            <p class="cat-work-card__desc">Illustrated retellings of the parables of Jesus — contemporary settings, ancient truths, vivid colour palettes.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="sculpture">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80&fit=crop" alt="Vessels" loading="lazy">
+            <span class="cat-work-card__tag">Sculpture</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Vessels of Light</h3>
+            <p class="cat-work-card__author">Priya Nair</p>
+            <p class="cat-work-card__desc">Ceramic vessels with interior lighting — earthen containers holding light, a physical meditation on 2 Corinthians 4:7.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="mixed-media">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=600&q=80&fit=crop" alt="Sacred Ground" loading="lazy">
+            <span class="cat-work-card__tag">Mixed Media</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Sacred Ground</h3>
+            <p class="cat-work-card__author">Maria Santos</p>
+            <p class="cat-work-card__desc">Earth, paint, and gold leaf on board — textured landscapes evoking holy ground, wilderness, and the promised land.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-creators"><div class="container"><div class="ev-section-head fade-in"><div><span class="label">Community</span><h2>Featured Fine Artists</h2></div><a href="explore.html" class="ev-row__more">View all <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="cat-creators__grid fade-in"><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&h=200&q=80&fit=crop&crop=faces" alt="Maria Santos"><strong>Maria Santos</strong><span>São Paulo, Brazil</span><p>Painting</p></div><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&q=80&fit=crop&crop=faces" alt="Kemi Adeyemi"><strong>Kemi Adeyemi</strong><span>London, UK</span><p>Illustration</p></div><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&q=80&fit=crop&crop=faces" alt="Priya Nair"><strong>Priya Nair</strong><span>Mumbai, India</span><p>Sculpture</p></div><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&q=80&fit=crop&crop=faces" alt="Grace Osei"><strong>Grace Osei</strong><span>Accra, Ghana</span><p>Painting & Mixed Media</p></div></div></div></section>
+
+  <section class="cta"><div class="container"><div class="cta__inner fade-in"><span class="label">Create with Purpose</span><h2>Join the Fine Art Community</h2><p>Show your work, find your people, and connect with artists who believe that beauty and truth are inseparable.</p><div class="cta__buttons"><a href="join.html" class="btn btn-primary">Join Luminara Today <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="mentorship.html" class="btn btn-outline">Find a Mentor</a></div></div></div></section>
+
+  <footer class="footer"><div class="container"><div class="footer__grid"><div class="footer__brand"><h3>Luminara</h3><p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p></div><div class="footer__column"><h4>Explore</h4><a href="featured.html">Featured Works</a><a href="explore.html">Categories</a><a href="#">Creators</a><a href="#">Collections</a></div><div class="footer__column"><h4>Community</h4><a href="promise.html">Our Story</a><a href="guidelines.html">Guidelines</a><a href="mentorship.html">Mentorship</a><a href="events.html">Events</a></div><div class="footer__column"><h4>Support</h4><a href="help.html">Help Center</a><a href="contact.html">Contact Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div><div class="footer__bottom"><p>&copy; 2026 Luminara. All rights reserved.</p></div></div></footer>
+  <script src="js/main.js"></script>
+  <script>const tabs=document.querySelectorAll('.cat-tab'),cards=document.querySelectorAll('.cat-work-card'),countEl=document.getElementById('catCount');tabs.forEach(tab=>{tab.addEventListener('click',()=>{tabs.forEach(t=>t.classList.remove('cat-tab--active'));tab.classList.add('cat-tab--active');const f=tab.dataset.filter;let v=0;cards.forEach(c=>{const m=f==='all'||c.dataset.tag===f;c.style.display=m?'':'none';if(m)v++;});countEl.textContent=`Showing ${v} work${v!==1?'s':''}`;});});</script>
+</body>
+</html>

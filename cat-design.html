@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design — Luminara</title>
+  <meta name="description" content="Brand identity, UI/UX, and graphic design with purpose from Luminara's design community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="explore.html">Explore</a><a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a><a href="stories.html">Stories</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <section class="cat-hero" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85&fit=crop')">
+    <div class="cat-hero__overlay"></div>
+    <div class="container cat-hero__inner">
+      <a href="explore.html" class="cat-hero__back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Categories</a>
+      <div class="cat-hero__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/><path d="M4 14l20 10 20-10"/><path d="M24 44V24"/>
+        </svg>
+      </div>
+      <span class="label cat-hero__label">Creative Discipline</span>
+      <h1>Design</h1>
+      <p>Brand identity, UI/UX, and graphic design with purpose. 180+ designers shaping visual culture for the Kingdom.</p>
+      <div class="cat-hero__stats">
+        <div class="cat-hero__stat"><strong>180+</strong><span>Creators</span></div>
+        <div class="cat-hero__stat"><strong>1,200+</strong><span>Works</span></div>
+        <div class="cat-hero__stat"><strong>29</strong><span>Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cat-filter-bar">
+    <div class="container cat-filter-bar__inner">
+      <div class="cat-filter-bar__tabs" id="catTabs">
+        <button class="cat-tab cat-tab--active" data-filter="all">All Works</button>
+        <button class="cat-tab" data-filter="branding">Branding</button>
+        <button class="cat-tab" data-filter="uiux">UI/UX</button>
+        <button class="cat-tab" data-filter="graphic">Graphic</button>
+        <button class="cat-tab" data-filter="typography">Typography</button>
+      </div>
+      <span class="cat-filter-bar__count" id="catCount">Showing 8 works</span>
+    </div>
+  </div>
+
+  <section class="cat-works">
+    <div class="container">
+      <div class="cat-grid" id="catGrid">
+
+        <article class="cat-work-card fade-in" data-tag="branding">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop" alt="Grace Branding Suite" loading="lazy">
+            <span class="cat-work-card__tag">Branding</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Grace Branding Suite</h3>
+            <p class="cat-work-card__author">Hannah Kim</p>
+            <p class="cat-work-card__desc">A complete brand identity system for a Christian nonprofit — rooted in warmth, trust, and Gospel clarity.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="uiux">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=600&q=80&fit=crop" alt="Daily Bread App" loading="lazy">
+            <span class="cat-work-card__tag">UI/UX</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Daily Bread App</h3>
+            <p class="cat-work-card__author">Marcus Webb</p>
+            <p class="cat-work-card__desc">A devotional reading app UI — calm, focused, and built to remove every friction from morning Scripture time.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="graphic">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80&fit=crop" alt="Scripture Posters" loading="lazy">
+            <span class="cat-work-card__tag">Graphic</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Scripture Poster Series</h3>
+            <p class="cat-work-card__author">Yemi Bashorun</p>
+            <p class="cat-work-card__desc">24 typographic scripture posters — each one a visual meditation on a different verse.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="typography">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80&fit=crop" alt="The Word Set Free" loading="lazy">
+            <span class="cat-work-card__tag">Typography</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Word Set Free</h3>
+            <p class="cat-work-card__author">Kemi Adeyemi</p>
+            <p class="cat-work-card__desc">An expressive typography series letting Scripture speak through form, weight, and negative space.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="branding">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&q=80&fit=crop" alt="Shepherd Church Identity" loading="lazy">
+            <span class="cat-work-card__tag">Branding</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Shepherd Church Identity</h3>
+            <p class="cat-work-card__author">Hannah Kim</p>
+            <p class="cat-work-card__desc">A full rebrand for a multi-campus church — one cohesive visual language across campus, print, and digital.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="graphic">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1618556450991-2f1af64e8191?w=600&q=80&fit=crop" alt="Pentecost Series" loading="lazy">
+            <span class="cat-work-card__tag">Graphic</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Pentecost Motion Series</h3>
+            <p class="cat-work-card__author">Daniel Marsh</p>
+            <p class="cat-work-card__desc">Bold graphic motion stills for a Pentecost campaign — fire, wind, and the weight of the Spirit made visual.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="uiux">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80&fit=crop" alt="Prayer Tracker UI" loading="lazy">
+            <span class="cat-work-card__tag">UI/UX</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Prayer Tracker UI</h3>
+            <p class="cat-work-card__author">Marcus Webb</p>
+            <p class="cat-work-card__desc">A mobile-first prayer journal app concept — simple enough to use before dawn, powerful enough to change a year.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="typography">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=600&q=80&fit=crop" alt="Psalm 23 Type" loading="lazy">
+            <span class="cat-work-card__tag">Typography</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Psalm 23 Type Study</h3>
+            <p class="cat-work-card__author">Kemi Adeyemi</p>
+            <p class="cat-work-card__desc">Six typographic interpretations of Psalm 23 — from hand-lettered warmth to stark modernist composition.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-creators">
+    <div class="container">
+      <div class="ev-section-head fade-in">
+        <div><span class="label">Community</span><h2>Featured Designers</h2></div>
+        <a href="explore.html" class="ev-row__more">View all creators <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="cat-creators__grid fade-in">
+        <div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&q=80&fit=crop&crop=faces" alt="Hannah Kim"><strong>Hannah Kim</strong><span>Seoul, South Korea</span><p>Branding & Identity</p></div>
+        <div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&q=80&fit=crop&crop=faces" alt="Marcus Webb"><strong>Marcus Webb</strong><span>Atlanta, USA</span><p>UI/UX Design</p></div>
+        <div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&q=80&fit=crop&crop=faces" alt="Yemi Bashorun"><strong>Yemi Bashorun</strong><span>Abuja, Nigeria</span><p>Graphic Design</p></div>
+        <div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&q=80&fit=crop&crop=faces" alt="Kemi Adeyemi"><strong>Kemi Adeyemi</strong><span>London, UK</span><p>Typography</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Design for His Glory</span>
+        <h2>Join the Design Community</h2>
+        <p>Share your work, connect with other designers, and sharpen your craft in a community that understands purpose-driven design.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">Join Luminara Today <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="mentorship.html" class="btn btn-outline">Find a Mentor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><h3>Luminara</h3><p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p></div>
+        <div class="footer__column"><h4>Explore</h4><a href="featured.html">Featured Works</a><a href="explore.html">Categories</a><a href="#">Creators</a><a href="#">Collections</a></div>
+        <div class="footer__column"><h4>Community</h4><a href="promise.html">Our Story</a><a href="guidelines.html">Guidelines</a><a href="mentorship.html">Mentorship</a><a href="events.html">Events</a></div>
+        <div class="footer__column"><h4>Support</h4><a href="help.html">Help Center</a><a href="contact.html">Contact Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const tabs = document.querySelectorAll('.cat-tab');
+    const cards = document.querySelectorAll('.cat-work-card');
+    const countEl = document.getElementById('catCount');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('cat-tab--active'));
+        tab.classList.add('cat-tab--active');
+        const filter = tab.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.tag === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        countEl.textContent = `Showing ${visible} work${visible !== 1 ? 's' : ''}`;
+      });
+    });
+  </script>
+</body>
+</html>

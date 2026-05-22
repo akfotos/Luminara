@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film & Video — Luminara</title>
+  <meta name="description" content="Documentaries, short films, and visual narratives of faith from Luminara's film community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions"><a href="login.html" class="btn btn-outline nav__btn">Log In</a><a href="join.html" class="btn btn-primary nav__btn">Join Now</a></div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="explore.html">Explore</a><a href="featured.html">Featured</a><a href="promise.html">Our Promise</a><a href="stories.html">Stories</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <section class="cat-hero" style="background-image:url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1600&q=85&fit=crop')">
+    <div class="cat-hero__overlay"></div>
+    <div class="container cat-hero__inner">
+      <a href="explore.html" class="cat-hero__back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Categories</a>
+      <div class="cat-hero__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="10" width="36" height="28" rx="3"/><polygon points="20,18 20,30 32,24"/><path d="M6 16h36M6 32h36"/></svg>
+      </div>
+      <span class="label cat-hero__label">Creative Discipline</span>
+      <h1>Film &amp; Video</h1>
+      <p>Documentaries, short films, and visual narratives of faith. 90+ filmmakers telling Kingdom stories through the moving image.</p>
+      <div class="cat-hero__stats">
+        <div class="cat-hero__stat"><strong>90+</strong><span>Creators</span></div>
+        <div class="cat-hero__stat"><strong>420+</strong><span>Works</span></div>
+        <div class="cat-hero__stat"><strong>22</strong><span>Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cat-filter-bar">
+    <div class="container cat-filter-bar__inner">
+      <div class="cat-filter-bar__tabs" id="catTabs">
+        <button class="cat-tab cat-tab--active" data-filter="all">All Works</button>
+        <button class="cat-tab" data-filter="shortfilm">Short Film</button>
+        <button class="cat-tab" data-filter="documentary">Documentary</button>
+        <button class="cat-tab" data-filter="music-video">Music Video</button>
+        <button class="cat-tab" data-filter="sermon-film">Sermon Film</button>
+      </div>
+      <span class="cat-filter-bar__count" id="catCount">Showing 8 works</span>
+    </div>
+  </div>
+
+  <section class="cat-works">
+    <div class="container">
+      <div class="cat-grid" id="catGrid">
+        <article class="cat-work-card fade-in" data-tag="shortfilm">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=80&fit=crop" alt="Still, Small Voice" loading="lazy">
+            <span class="cat-work-card__tag">Short Film</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Still, Small Voice</h3>
+            <p class="cat-work-card__author">David Chen</p>
+            <p class="cat-work-card__desc">An 18-minute short film about a composer who loses his hearing and rediscovers God in the silence.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="documentary">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80&fit=crop" alt="Built by Hand" loading="lazy">
+            <span class="cat-work-card__tag">Documentary</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Built by Hand</h3>
+            <p class="cat-work-card__author">Nadia Cruz</p>
+            <p class="cat-work-card__desc">A documentary following three craftspeople across three continents — each one building something for the glory of God.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="music-video">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&q=80&fit=crop" alt="Nations Sing" loading="lazy">
+            <span class="cat-work-card__tag">Music Video</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Nations Sing — Official Video</h3>
+            <p class="cat-work-card__author">David Chen</p>
+            <p class="cat-work-card__desc">A visually stunning music video shot across Ghana, France, and the UK — one song rising from many mouths.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="sermon-film">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&q=80&fit=crop" alt="The Table" loading="lazy">
+            <span class="cat-work-card__tag">Sermon Film</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Table</h3>
+            <p class="cat-work-card__author">Yemi Bashorun</p>
+            <p class="cat-work-card__desc">A cinematic sermon film weaving spoken word theology with stunning visual metaphor — exploring communion and belonging.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="shortfilm">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&q=80&fit=crop" alt="The Return" loading="lazy">
+            <span class="cat-work-card__tag">Short Film</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Return</h3>
+            <p class="cat-work-card__author">Nadia Cruz</p>
+            <p class="cat-work-card__desc">A prodigal son retelling set in contemporary Madrid — 24 minutes, no dialogue, only image and score.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="documentary">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80&fit=crop" alt="The Invisible Church" loading="lazy">
+            <span class="cat-work-card__tag">Documentary</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Invisible Church</h3>
+            <p class="cat-work-card__author">David Chen</p>
+            <p class="cat-work-card__desc">A documentary portrait of underground Christian communities in five countries — faith under pressure, art as testimony.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="music-video">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1501386761578-eaa54b8b8db7?w=600&q=80&fit=crop" alt="More Than Gold" loading="lazy">
+            <span class="cat-work-card__tag">Music Video</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>More Than Gold</h3>
+            <p class="cat-work-card__author">Yemi Bashorun</p>
+            <p class="cat-work-card__desc">An ethereal music video built around Psalm 19 — creation, Scripture, and the beauty of being known by God.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="cat-work-card fade-in" data-tag="sermon-film">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&q=80&fit=crop" alt="Burning Bright" loading="lazy">
+            <span class="cat-work-card__tag">Sermon Film</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Burning Bright</h3>
+            <p class="cat-work-card__author">Nadia Cruz</p>
+            <p class="cat-work-card__desc">A sermon-as-short-film about Matthew 5:14 — city on a hill, lamp on a stand, light that cannot be hidden.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-creators"><div class="container"><div class="ev-section-head fade-in"><div><span class="label">Community</span><h2>Featured Filmmakers</h2></div><a href="explore.html" class="ev-row__more">View all <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div><div class="cat-creators__grid fade-in"><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&q=80&fit=crop&crop=faces" alt="David Chen"><strong>David Chen</strong><span>Vancouver, Canada</span><p>Short Film & Documentary</p></div><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&q=80&fit=crop&crop=faces" alt="Nadia Cruz"><strong>Nadia Cruz</strong><span>Madrid, Spain</span><p>Documentary</p></div><div class="cat-creator-card"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&q=80&fit=crop&crop=faces" alt="Yemi Bashorun"><strong>Yemi Bashorun</strong><span>Lagos, Nigeria</span><p>Music Video & Sermon Film</p></div></div></div></section>
+
+  <section class="cta"><div class="container"><div class="cta__inner fade-in"><span class="label">Tell the Story</span><h2>Join the Film Community</h2><p>Share your films, connect with other filmmakers, and find collaborators who understand that every frame can carry eternal weight.</p><div class="cta__buttons"><a href="join.html" class="btn btn-primary">Join Luminara Today <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><a href="mentorship.html" class="btn btn-outline">Find a Mentor</a></div></div></div></section>
+
+  <footer class="footer"><div class="container"><div class="footer__grid"><div class="footer__brand"><h3>Luminara</h3><p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p></div><div class="footer__column"><h4>Explore</h4><a href="featured.html">Featured Works</a><a href="explore.html">Categories</a><a href="#">Creators</a><a href="#">Collections</a></div><div class="footer__column"><h4>Community</h4><a href="promise.html">Our Story</a><a href="guidelines.html">Guidelines</a><a href="mentorship.html">Mentorship</a><a href="events.html">Events</a></div><div class="footer__column"><h4>Support</h4><a href="help.html">Help Center</a><a href="contact.html">Contact Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div><div class="footer__bottom"><p>&copy; 2026 Luminara. All rights reserved.</p></div></div></footer>
+  <script src="js/main.js"></script>
+  <script>const tabs=document.querySelectorAll('.cat-tab'),cards=document.querySelectorAll('.cat-work-card'),countEl=document.getElementById('catCount');tabs.forEach(tab=>{tab.addEventListener('click',()=>{tabs.forEach(t=>t.classList.remove('cat-tab--active'));tab.classList.add('cat-tab--active');const f=tab.dataset.filter;let v=0;cards.forEach(c=>{const m=f==='all'||c.dataset.tag===f;c.style.display=m?'':'none';if(m)v++;});countEl.textContent=`Showing ${v} work${v!==1?'s':''}`;});});</script>
+</body>
+</html>

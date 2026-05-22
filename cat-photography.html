@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography — Luminara</title>
+  <meta name="description" content="Explore portraits, landscapes, and visual storytelling rooted in faith from Luminara's photography community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="explore.html">Explore</a><a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a><a href="stories.html">Stories</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- CATEGORY HERO -->
+  <section class="cat-hero" style="background-image:url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1600&q=85&fit=crop')">
+    <div class="cat-hero__overlay"></div>
+    <div class="container cat-hero__inner">
+      <a href="explore.html" class="cat-hero__back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        All Categories
+      </a>
+      <div class="cat-hero__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="4" y="10" width="40" height="28" rx="3"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="4"/><path d="M14 10V7h6v3"/>
+        </svg>
+      </div>
+      <span class="label cat-hero__label">Creative Discipline</span>
+      <h1>Photography</h1>
+      <p>Portraits, landscapes, and visual storytelling rooted in faith. 240+ creators capturing God's light through the lens.</p>
+      <div class="cat-hero__stats">
+        <div class="cat-hero__stat"><strong>240+</strong><span>Creators</span></div>
+        <div class="cat-hero__stat"><strong>1,800+</strong><span>Works</span></div>
+        <div class="cat-hero__stat"><strong>38</strong><span>Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="cat-filter-bar">
+    <div class="container cat-filter-bar__inner">
+      <div class="cat-filter-bar__tabs" id="catTabs">
+        <button class="cat-tab cat-tab--active" data-filter="all">All Works</button>
+        <button class="cat-tab" data-filter="portrait">Portrait</button>
+        <button class="cat-tab" data-filter="landscape">Landscape</button>
+        <button class="cat-tab" data-filter="documentary">Documentary</button>
+        <button class="cat-tab" data-filter="worship">Worship</button>
+      </div>
+      <span class="cat-filter-bar__count" id="catCount">Showing 8 works</span>
+    </div>
+  </div>
+
+  <!-- WORKS GRID -->
+  <section class="cat-works">
+    <div class="container">
+      <div class="cat-grid" id="catGrid">
+
+        <article class="cat-work-card fade-in" data-tag="portrait">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&fit=crop" alt="Still & Known" loading="lazy">
+            <span class="cat-work-card__tag">Portrait</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Still &amp; Known</h3>
+            <p class="cat-work-card__author">Elijah Okonkwo</p>
+            <p class="cat-work-card__desc">A portrait series exploring the peace that passes understanding — faces at rest in faith.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="documentary">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80&fit=crop" alt="Sacred Spaces" loading="lazy">
+            <span class="cat-work-card__tag">Documentary</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Sacred Spaces</h3>
+            <p class="cat-work-card__author">Elijah Okonkwo</p>
+            <p class="cat-work-card__desc">A documentary series capturing places of quiet worship across the African continent.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="landscape">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&fit=crop" alt="His Handiwork" loading="lazy">
+            <span class="cat-work-card__tag">Landscape</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>His Handiwork</h3>
+            <p class="cat-work-card__author">Ama Kofi</p>
+            <p class="cat-work-card__desc">Creation photography — mountains, shorelines, and skies declaring the glory of God.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="worship">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=600&q=80&fit=crop" alt="Lifted Hands" loading="lazy">
+            <span class="cat-work-card__tag">Worship</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Lifted Hands</h3>
+            <p class="cat-work-card__author">Miriam Diallo</p>
+            <p class="cat-work-card__desc">Concert and worship photography that captures the visceral moment between heaven and earth.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="portrait">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=600&q=80&fit=crop" alt="Faces of Faith" loading="lazy">
+            <span class="cat-work-card__tag">Portrait</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Faces of Faith</h3>
+            <p class="cat-work-card__author">Ama Kofi</p>
+            <p class="cat-work-card__desc">Intimate portraits of everyday believers — their stories written in expression and light.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="landscape">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=600&q=80&fit=crop" alt="Selah" loading="lazy">
+            <span class="cat-work-card__tag">Landscape</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>Selah</h3>
+            <p class="cat-work-card__author">Nadia Cruz</p>
+            <p class="cat-work-card__desc">Slow, contemplative landscape photography — meditations in colour and silence.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="documentary">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&q=80&fit=crop" alt="The Maker's Hands" loading="lazy">
+            <span class="cat-work-card__tag">Documentary</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>The Maker's Hands</h3>
+            <p class="cat-work-card__author">James Okafor</p>
+            <p class="cat-work-card__desc">A photographic study of craftspeople and artisans — hands that create as worship.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cat-work-card fade-in" data-tag="worship">
+          <div class="cat-work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&q=80&fit=crop" alt="In the Studio" loading="lazy">
+            <span class="cat-work-card__tag">Worship</span>
+          </div>
+          <div class="cat-work-card__body">
+            <h3>In the Studio</h3>
+            <p class="cat-work-card__author">Grace Osei</p>
+            <p class="cat-work-card__desc">Behind-the-scenes worship recordings — raw, unguarded moments of creative devotion.</p>
+            <a href="featured.html" class="cat-work-card__link">View Work
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CREATORS -->
+  <section class="cat-creators">
+    <div class="container">
+      <div class="ev-section-head fade-in">
+        <div><span class="label">Community</span><h2>Featured Photographers</h2></div>
+        <a href="explore.html" class="ev-row__more">View all creators <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="cat-creators__grid fade-in">
+        <div class="cat-creator-card">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&q=80&fit=crop&crop=faces" alt="Elijah Okonkwo">
+          <strong>Elijah Okonkwo</strong>
+          <span>Lagos, Nigeria</span>
+          <p>Documentary & Portrait</p>
+        </div>
+        <div class="cat-creator-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&q=80&fit=crop&crop=faces" alt="Ama Kofi">
+          <strong>Ama Kofi</strong>
+          <span>Accra, Ghana</span>
+          <p>Portrait & Landscape</p>
+        </div>
+        <div class="cat-creator-card">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=200&h=200&q=80&fit=crop&crop=faces" alt="Miriam Diallo">
+          <strong>Miriam Diallo</strong>
+          <span>Paris, France</span>
+          <p>Worship Photography</p>
+        </div>
+        <div class="cat-creator-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&q=80&fit=crop&crop=faces" alt="James Okafor">
+          <strong>James Okafor</strong>
+          <span>London, UK</span>
+          <p>Documentary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Share Your Eye</span>
+        <h2>Join the Photography Community</h2>
+        <p>Post your work, connect with other photographers, and find a mentor to sharpen your eye and your faith.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">Join Luminara Today <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="mentorship.html" class="btn btn-outline">Find a Mentor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><h3>Luminara</h3><p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p></div>
+        <div class="footer__column"><h4>Explore</h4><a href="featured.html">Featured Works</a><a href="explore.html">Categories</a><a href="#">Creators</a><a href="#">Collections</a></div>
+        <div class="footer__column"><h4>Community</h4><a href="promise.html">Our Story</a><a href="guidelines.html">Guidelines</a><a href="mentorship.html">Mentorship</a><a href="events.html">Events</a></div>
+        <div class="footer__column"><h4>Support</h4><a href="help.html">Help Center</a><a href="contact.html">Contact Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const tabs = document.querySelectorAll('.cat-tab');
+    const cards = document.querySelectorAll('.cat-work-card');
+    const countEl = document.getElementById('catCount');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('cat-tab--active'));
+        tab.classList.add('cat-tab--active');
+        const filter = tab.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.tag === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        countEl.textContent = `Showing ${visible} work${visible !== 1 ? 's' : ''}`;
+      });
+    });
+  </script>
+</body>
+</html>
