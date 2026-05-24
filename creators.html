@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creators — Luminara</title>
+  <meta name="description" content="Meet the faith-driven creatives of Luminara — photographers, designers, writers, musicians, filmmakers, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Luminara</a>
+      <ul class="nav__links">
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="featured.html" class="nav__link">Featured</a></li>
+        <li><a href="promise.html" class="nav__link">Our Promise</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline nav__btn">Log In</a>
+        <a href="join.html" class="btn btn-primary nav__btn">Join Now</a>
+      </div>
+      <button class="nav__hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="explore.html">Explore</a><a href="featured.html">Featured</a>
+    <a href="promise.html">Our Promise</a><a href="stories.html">Stories</a>
+    <a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="join.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero creators-hero">
+    <div class="container">
+      <span class="label">Our Community</span>
+      <h1>Meet the Creators</h1>
+      <p>1,200+ faith-driven creatives from 48 countries — each one called, each one making something that matters.</p>
+      <div class="creators-hero__stats">
+        <div class="creators-hero__stat"><strong>1,200+</strong><span>Members</span></div>
+        <div class="creators-hero__stat"><strong>48</strong><span>Countries</span></div>
+        <div class="creators-hero__stat"><strong>8</strong><span>Disciplines</span></div>
+        <div class="creators-hero__stat"><strong>320</strong><span>Mentors</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="cat-filter-bar">
+    <div class="container cat-filter-bar__inner">
+      <div class="cat-filter-bar__tabs" id="creatorTabs">
+        <button class="cat-tab cat-tab--active" data-filter="all">All Creators</button>
+        <button class="cat-tab" data-filter="photography">Photography</button>
+        <button class="cat-tab" data-filter="design">Design</button>
+        <button class="cat-tab" data-filter="writing">Writing</button>
+        <button class="cat-tab" data-filter="music">Music</button>
+        <button class="cat-tab" data-filter="film">Film</button>
+        <button class="cat-tab" data-filter="fineart">Fine Art</button>
+        <button class="cat-tab" data-filter="podcasting">Podcasting</button>
+        <button class="cat-tab" data-filter="crafts">Crafts</button>
+      </div>
+      <span class="cat-filter-bar__count" id="creatorCount">Showing 24 creators</span>
+    </div>
+  </div>
+
+  <!-- CREATORS GRID -->
+  <section class="creators-section">
+    <div class="container">
+      <div class="creators-grid" id="creatorsGrid">
+
+        <article class="creator-profile-card fade-in" data-discipline="photography">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&q=80&fit=crop&crop=faces" alt="Elijah Okonkwo" loading="lazy">
+            <span class="creator-profile-card__badge">Featured</span>
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Elijah Okonkwo</h3>
+            <span class="creator-profile-card__discipline">Photography</span>
+            <p class="creator-profile-card__location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Lagos, Nigeria
+            </p>
+            <p class="creator-profile-card__bio">Documentary and portrait photographer capturing the stories of faith across the African continent.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-photography.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="design">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&q=80&fit=crop&crop=faces" alt="Hannah Kim" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Hannah Kim</h3>
+            <span class="creator-profile-card__discipline">Design</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Seoul, South Korea</p>
+            <p class="creator-profile-card__bio">Brand identity and church communications designer. Creating visual systems that serve the Kingdom with clarity and beauty.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-design.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="writing">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&q=80&fit=crop&crop=faces" alt="Ruth Adeyemi" loading="lazy">
+            <span class="creator-profile-card__badge">Mentor</span>
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Ruth Adeyemi</h3>
+            <span class="creator-profile-card__discipline">Writing</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Ibadan, Nigeria</p>
+            <p class="creator-profile-card__bio">Poet and essayist. Author of Everyday Psalms — writing that names the holy in the ordinary and gives language to longing.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-writing.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="music">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&q=80&fit=crop&crop=faces" alt="James Okafor" loading="lazy">
+            <span class="creator-profile-card__badge">Mentor</span>
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>James Okafor</h3>
+            <span class="creator-profile-card__discipline">Music & Worship</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> London, UK</p>
+            <p class="creator-profile-card__bio">Worship leader, songwriter, and multilingual recording artist. Created Psalms Reimagined — 12 tracks setting ancient texts to contemporary music.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-music.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="film">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&q=80&fit=crop&crop=faces" alt="David Chen" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>David Chen</h3>
+            <span class="creator-profile-card__discipline">Film & Video</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Vancouver, Canada</p>
+            <p class="creator-profile-card__bio">Filmmaker and documentarian. His short film Still, Small Voice won three festival awards and has been seen in 22 countries.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-film.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="fineart">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=400&h=400&q=80&fit=crop&crop=faces" alt="Maria Santos" loading="lazy">
+            <span class="creator-profile-card__badge">Featured</span>
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Maria Santos</h3>
+            <span class="creator-profile-card__discipline">Fine Art</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> São Paulo, Brazil</p>
+            <p class="creator-profile-card__bio">Painter working in oil and mixed media. Her series Light Within explores the names of God through colour and abstract form.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-fineart.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="podcasting">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&q=80&fit=crop&crop=faces" alt="Ruth Mensah" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Ruth Mensah</h3>
+            <span class="creator-profile-card__discipline">Podcasting</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Kumasi, Ghana</p>
+            <p class="creator-profile-card__bio">Host of Made for This and The Gifted Life — interviewing faith-driven creatives about calling, craft, and the courage to make things.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-podcasting.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="crafts">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=400&h=400&q=80&fit=crop&crop=faces" alt="Adaeze Eze" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Adaeze Eze</h3>
+            <span class="creator-profile-card__discipline">Crafts & Handmade</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Enugu, Nigeria</p>
+            <p class="creator-profile-card__bio">Calligrapher and hand-letterer. Creates Scripture prints and illuminated manuscripts that make the Word beautiful on the page.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-crafts.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="photography">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&q=80&fit=crop&crop=faces" alt="Ama Kofi" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Ama Kofi</h3>
+            <span class="creator-profile-card__discipline">Photography</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Accra, Ghana</p>
+            <p class="creator-profile-card__bio">Portrait and landscape photographer. Her work explores creation as testimony — faces and landscapes that declare the glory of God.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-photography.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="design">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&q=80&fit=crop&crop=faces" alt="Marcus Webb" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Marcus Webb</h3>
+            <span class="creator-profile-card__discipline">Design</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Atlanta, USA</p>
+            <p class="creator-profile-card__bio">UI/UX designer specialising in digital tools for the Church — devotional apps, sermon platforms, and community portals built for mission.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-design.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="fineart">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&q=80&fit=crop&crop=faces" alt="Priya Nair" loading="lazy">
+            <span class="creator-profile-card__badge">Mentor</span>
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Priya Nair</h3>
+            <span class="creator-profile-card__discipline">Fine Art</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mumbai, India</p>
+            <p class="creator-profile-card__bio">Sculptor and ceramicist. Her work Vessels of Light — ceramic containers holding light — is a meditation on 2 Corinthians 4:7.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1493106641515-5480b4b09d1a?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-fineart.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+        <article class="creator-profile-card fade-in" data-discipline="film">
+          <div class="creator-profile-card__img">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&q=80&fit=crop&crop=faces" alt="Nadia Cruz" loading="lazy">
+          </div>
+          <div class="creator-profile-card__body">
+            <h3>Nadia Cruz</h3>
+            <span class="creator-profile-card__discipline">Film & Video</span>
+            <p class="creator-profile-card__location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Madrid, Spain</p>
+            <p class="creator-profile-card__bio">Documentary filmmaker and director. Her film The Return — a silent prodigal son retelling — screened at 14 international festivals.</p>
+            <div class="creator-profile-card__works">
+              <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=80&h=80&q=70&fit=crop" alt="Work 1">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=80&h=80&q=70&fit=crop" alt="Work 2">
+              <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=80&h=80&q=70&fit=crop" alt="Work 3">
+            </div>
+            <a href="cat-film.html" class="creator-profile-card__cta">View Profile <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="creators-load-more fade-in">
+        <p>Showing 12 of 1,200+ creators</p>
+        <a href="join.html" class="btn btn-outline">Join to See All Creators <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BECOME A CREATOR CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner fade-in">
+        <span class="label">Join Us</span>
+        <h2>Add Your Voice to the Community</h2>
+        <p>Share your work, connect with fellow creatives, and find mentors who will help you grow in your calling.</p>
+        <div class="cta__buttons">
+          <a href="join.html" class="btn btn-primary">Join Luminara Today <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="mentorship.html" class="btn btn-outline">Find a Mentor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><h3>Luminara</h3><p>A curated space where faith-driven creatives connect, showcase their work, and grow together in community and purpose.</p></div>
+        <div class="footer__column"><h4>Explore</h4><a href="featured.html">Featured Works</a><a href="explore.html">Categories</a><a href="creators.html">Creators</a><a href="collections.html">Collections</a></div>
+        <div class="footer__column"><h4>Community</h4><a href="promise.html">Our Story</a><a href="guidelines.html">Guidelines</a><a href="mentorship.html">Mentorship</a><a href="events.html">Events</a></div>
+        <div class="footer__column"><h4>Support</h4><a href="help.html">Help Center</a><a href="contact.html">Contact Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Luminara. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-7-8.5L19.5 4h-2L12.5 10 8 4H4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75,15.02 15.5,12 9.75,8.98"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const tabs = document.querySelectorAll('.cat-tab');
+    const cards = document.querySelectorAll('.creator-profile-card');
+    const countEl = document.getElementById('creatorCount');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('cat-tab--active'));
+        tab.classList.add('cat-tab--active');
+        const filter = tab.dataset.filter;
+        let visible = 0;
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.discipline === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        countEl.textContent = `Showing ${visible} creator${visible !== 1 ? 's' : ''}`;
+      });
+    });
+  </script>
+</body>
+</html>
